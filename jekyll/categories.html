@@ -6,8 +6,16 @@ layout: default
   <h1>Categories</h1>
   <ul class="categories">
     {% for category in site.categories %}
-      <li><a href="/categories/{{ category | first }}/" title="view all
-posts">{{ category | first }} {{ category | last | size }}</a></li>
+      <li>
+          {{ category | first }} ({{ category | last | size }}):<br/>
+          <ul>
+              {%for post in site.posts%}
+              {%if post.categories.index(category)>=0%}
+                <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+              {%endif%}
+              {%endfor%}
+          </ul>
+      </li>
     {% endfor %}
   </ul>
 </div>
