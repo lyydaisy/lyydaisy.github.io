@@ -6,7 +6,7 @@ markdown: redcarpet
 pygments: true
 highlighter: pygments
 logo: false
-paginate: 5
+paginate: 1
 paginate_path: "/jekyll/page:num"
 baseurl: /jekyll/
 domain_name: 'http://lyydaisy.github.io'
