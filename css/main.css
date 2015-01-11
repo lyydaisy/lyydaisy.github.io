@@ -17,7 +17,7 @@ body {
  * Font and link declarations
  * //////////////////////////
  */
-span.time {
+span.time,span.categories {
     color: #ADADAD;
     margin-bottom: 5px;
     font-size: 11px;
