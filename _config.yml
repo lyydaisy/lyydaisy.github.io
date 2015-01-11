@@ -1,0 +1,17 @@
+name: lyydaisy's Blog
+description: Welcome to my homepage.
+meta_description: ""
+
+markdown: redcarpet
+pygments: true
+highlighter: pygments
+logo: false
+paginate: 5
+paginate_path: "/jekyll/page:num"
+baseurl: /jekyll/
+domain_name: 'http://lyydaisy.github.io'
+
+# Details for the RSS feed generator
+url:            'http://lyydaisy.github.io/jekyll/'
+author:         'lyydaisy'
+
