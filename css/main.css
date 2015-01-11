@@ -130,6 +130,8 @@ div.right .post ul,div.right .categories ul {
 	margin-left: 15px;
 }
 
+#home ul.posts{height:400px;}
+
 /**
  * ///////////////////////////////////
  * Left column aka nav bar formatting
