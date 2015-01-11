@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Categories
 ---
 
 <div id="home">
@@ -7,8 +8,8 @@ layout: default
   <ul class="categories">
     {% for category in site.categories %}
       <li>
-          {{ category | first }} ({{ category | last | size }}):<br/>
-          <ul>
+          <a class="category" href="javascript:void(0);" style="text-decoration:none;">{{ category | first }} ({{ category | last | size }})</a><br/>
+          <ul style="display:none;">
               {%for post in category[1]%}
                 <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
               {%endfor%}
