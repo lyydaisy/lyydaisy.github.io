@@ -130,7 +130,7 @@ div.right .post ul,div.right .categories ul {
 }
 
 #home h1{border-bottom: 1px solid #E6E6E6;}
-#home ul.posts{height:400px;}
+#home ul.posts,#home ul.categories{height:400px;overflow-y: auto;}
 
 /**
  * ///////////////////////////////////
