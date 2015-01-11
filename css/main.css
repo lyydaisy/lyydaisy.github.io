@@ -125,7 +125,7 @@ div.right ul li {
 	padding: 0;
 }
 
-div.right .post ul {
+div.right .post ul,div.right .categories ul {
 	list-style: square;
 	margin-left: 15px;
 }
