@@ -16,7 +16,7 @@ layout: default
           {% if paginator.previous_page == 1 %}
             <a href="/jekyll/">Previous</a>
           {% else %}
-            <a href="/jekyll/{{ paginator.previous_page_path }}">Previous</a>
+            <a href="{{ paginator.previous_page_path }}">Previous</a>
           {% endif %}
         </p>
       {% else %}
@@ -47,7 +47,7 @@ layout: default
 
       {% if paginator.next_page %}
         <p class="next">
-          <a href="/jekyll/{{ paginator.next_page_path }}">Next</a>
+          <a href="{{ paginator.next_page_path }}">Next</a>
         </p>
       {% else %}
         <p class="next disabled">
