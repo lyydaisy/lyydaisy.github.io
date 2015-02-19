@@ -29,7 +29,7 @@ function init(){
     var circle = s.circle(clientWidth/2,clientHeight/2,150);
     circle.attr({fill:"white"});
     var txt = s.text(clientWidth/2,clientHeight/2,"lyy");
-    txt.node.style.fontSize = 150;
+    txt.node.style.fontSize = "150px";
     txt.node.style.fontFamily = "vs";
     txt.attr({fill:"red",transform:"t-90,0"});
     txt.animate({fill:"gold"},2000,mina.linear);
