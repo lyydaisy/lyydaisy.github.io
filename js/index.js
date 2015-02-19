@@ -52,9 +52,6 @@ function init(){
     var mask = s.rect(clientWidth/2-200,clientHeight/2-100,clientWidth/2+200,clientHeight/2+75);
     txt2.attr({mask:mask});
     mask.animate({height:0},2000,mina.linear);
-
-    
-
 }
 
 
