@@ -27,12 +27,12 @@ function init(){
     createClover(6);
     clover.node.style.display = "none";
 
-    var circle = s.circle(clientWidth/2,clientHeight/2,150);
+    var circle = s.circle(clientWidth/2,clientHeight/2,120);
     circle.attr({fill:"white"});
     var txt = s.text(clientWidth/2,clientHeight/2,"lyy");
     txt.node.style.fontSize = "150px";
     txt.node.style.fontFamily = "vs";
-    txt.attr({fill:"gold",transform:"t-90,0"});
+    txt.attr({fill:"gold",transform:"t-85,0"});
     //txt.animate({fill:"gold"},2000,mina.linear);
 
     var circleG = s.g(circle,txt);
@@ -41,15 +41,15 @@ function init(){
         location.href="/jekyll";
     });
     circleG.node.addEventListener("mouseenter",function(){
-        circle.animate({r:180},1000,mina.elastic);
-    });
-    circleG.node.addEventListener("mouseleave",function(){
         circle.animate({r:150},1000,mina.elastic);
     });
-    
+    circleG.node.addEventListener("mouseleave",function(){
+        circle.animate({r:120},1000,mina.elastic);
+    });
+
     var txt2 = txt.clone();
     txt2.attr({fill:"red"});
-    var mask = s.rect(clientWidth/2-75,clientHeight/2-100,clientWidth/2+75,clientHeight/2+75);
+    var mask = s.rect(clientWidth/2-200,clientHeight/2-100,clientWidth/2+200,clientHeight/2+75);
     txt2.attr({mask:mask});
     mask.animate({height:0},2000,mina.linear);
 
