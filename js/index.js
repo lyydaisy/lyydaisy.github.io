@@ -13,7 +13,7 @@ function init(){
                       C90 220 90 160 100 150\
                       C110 135 140 140 150 150Z");
     var f = s.filter(Snap.filter.shadow(0, 0, 2,"black",0.5));
-    petal.attr({stroke:"green",strokeWidth:1,fill:"green",filter:f});
+    petal.attr({stroke:"green",strokeWidth:1,fill:"green"});
     var petal2= petal.clone(),petal3= petal.clone(),petal4= petal.clone();
     petal2.transform("r90,150,280");
     petal3.transform("r180,150,280");
@@ -21,8 +21,9 @@ function init(){
     var allpetal = s.g(petal,petal2,petal3,petal4);
     allpetal.transform("r45,150,280");
     var stem = s.path("M148 295C160 380 160 420 140 500L120 500C140 450 155 320 148 295Z");
-    stem.attr({stroke:"green",strokeWidth:1,fill:"green",filter:f});
+    stem.attr({stroke:"green",strokeWidth:1,fill:"green"});
     window.clover = s.g(stem,allpetal);
+    clover.attr({filter:f});
     createClover(6);
     clover.node.style.display = "none";
 
