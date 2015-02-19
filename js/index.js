@@ -32,8 +32,9 @@ function init(){
     var txt = s.text(clientWidth/2,clientHeight/2,"lyy");
     txt.node.style.fontSize = "150px";
     txt.node.style.fontFamily = "vs";
-    txt.attr({fill:"red",transform:"t-90,0"});
-    txt.animate({fill:"gold"},2000,mina.linear);
+    txt.attr({fill:"gold",transform:"t-90,0"});
+    //txt.animate({fill:"gold"},2000,mina.linear);
+
     var circleG = s.g(circle,txt);
     circleG.node.style.cursor = "pointer";
     circleG.node.addEventListener("click",function(){
@@ -41,12 +42,18 @@ function init(){
     });
     circleG.node.addEventListener("mouseenter",function(){
         circle.animate({r:180},1000,mina.elastic);
-        txt.attr({fill:"red"});
     });
     circleG.node.addEventListener("mouseleave",function(){
         circle.animate({r:150},1000,mina.elastic);
-        txt.attr({fill:"gold"});
     });
+    
+    var txt2 = txt.clone();
+    txt2.attr({fill:"red"});
+    var mask = s.rect(clientWidth/2-75,clientHeight/2-100,clientWidth/2+75,clientHeight/2+75);
+    txt2.attr({mask:mask});
+    mask.animate({height:0},2000,mina.linear);
+
+    
 
 }
 
