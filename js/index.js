@@ -24,7 +24,7 @@ function init(){
     stem.attr({stroke:"green",strokeWidth:1,fill:"green"});
     window.clover = s.g(stem,allpetal);
     clover.attr({filter:f});
-    createClover(6);
+    createClover(4);
     clover.node.style.display = "none";
 
     var circle = s.circle(clientWidth/2,clientHeight/2,120);
