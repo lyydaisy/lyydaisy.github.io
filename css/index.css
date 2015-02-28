@@ -6,33 +6,9 @@
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
-@-webkit-keyframes sycRotate{
-    from{-webkit-transform:rotate(0deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes sycRotate{
-    from{-moz-transform:rotate(0deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-o-keyframes sycRotate{
-    from{-o-transform:rotate(0deg);}
-    to{-o-transform:rotate(360deg);}
-}
 @keyframes sycFade{
     from{transform:rotate(0deg) scale(1);}
     to{transform:rotate(360deg) scale(0);}
-}
-@-webkit-keyframes sycFade{
-    from{-webkit-transform:rotate(0deg) scale(1);}
-    to{-webkit-transform:rotate(360deg) scale(0);}
-}
-@-moz-keyframes sycFade{
-    from{-moz-transform:rotate(0deg) scale(1);}
-    to{-moz-transform:rotate(360deg) scale(0);}
-}
-@-o-keyframes sycFade{
-    from{-o-transform:rotate(0deg) scale(1);}
-    to{-o-transform:rotate(360deg) scale(0);}
 }
 *{margin:0;padding:0;}
 body{background:rgb(186,217,229);}
