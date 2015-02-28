@@ -18,9 +18,26 @@
             </p>
         </div>
 
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+        <div class="ball ball4"></div>
+        <div class="crystal">
+            <div class="crystalrope"></div>
+        </div>
+
         <script>
         $(".lyy a").bind("click",function(){
-            $(".sycp").add(".lyy").addClass("sycpfade");
+            $(".sycp,.lyy").addClass("sycpfade");
+            setTimeout(function(){
+                $(".ball,.crystal").removeClass("ballUp").addClass("ballFall");   
+            },500);
+        });
+        $(".crystal").bind("click",function(){
+            $(".ball,.crystal").removeClass("ballFall").addClass("ballUp");
+            setTimeout(function(){
+                $(".sycp,.lyy").hide().removeClass("sycpfade").fadeIn();
+            },1000);
         });
         </script>
     </body>
