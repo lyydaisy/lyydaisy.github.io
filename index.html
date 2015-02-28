@@ -39,11 +39,13 @@
                 $(".sycp,.lyy").hide().removeClass("sycpfade").fadeIn();
             },1000);
         });
+        $(function(){
+            $(".preload").html('\
+            <img src="./img/crystal.png"/>\
+            <img src="./img/crystalrope.png"/>\
+            <img src="./img/rope.png"/>');
+        });
         </script>
-        <div style="display:none">
-            <img src="./img/crystal.png"/>
-            <img src="./img/crystalrope.png"/>
-            <img src="./img/rope.png"/>
-        </div>
+        <div class="preload" style="display:none"></div>
     </body>
 </html>
