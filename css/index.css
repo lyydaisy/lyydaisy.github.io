@@ -21,6 +21,7 @@ a,a:hover{text-decoration:none;color:black;}
 .sycpfade{animation:sycFade 2s;transform:scale(0,0);}
 .lyy{width:150px;height:150px;border-radius: 75px;background:white;text-align:center;line-height:120px;font-size:75px;font-family:"vs";position:fixed;left:50%;top:50%;margin-left:-75px;margin-top:-75px;cursor:pointer;}
 .lyy:hover{transform:scale(1.2,1.2);box-shadow:0 0 10px #000;}
+.sycpfade:hover{transform:scale(0,0);}
 .lyy a{color:red;}
 @media only screen and (max-width: 640px){
     .sycp{transform:scale(0.5,0.5);}
