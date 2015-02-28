@@ -42,10 +42,10 @@ a,a:hover{text-decoration:none;color:black;}
 .ball{width:120px;height:120px;border-radius:60px;position:fixed;margin-top:-320px;transform-origin: 50% -150px;}
 .ball:before{content:" ";width:10px;height:200px;position:absolute;left:55px;top:-200px;background:url(../img/rope.png) repeat-y;background-size: 100%;}
 .ball:after{content:"";position:absolute;width:60px;height:30px;left:30px;top:10px;border-radius:60px / 30px;background:-webkit-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(232,232,232,1) 1%,rgba(255,255,255,0) 100%);}
-.ball1{left:10%;top:150px;background:-webkit-linear-gradient(top,#eeeeee,red);box-shadow:inset 0 -1px 15px rgba(255,255,255,0.4),inset -2px -1px 60px rgba(0,0,0,0.4),0 0 1px #000;animation-delay:0s;}
-.ball2{left:25%;top:150px;background:-webkit-linear-gradient(top,#eeeeee,blue);box-shadow:inset 0 -1px 15px rgba(255,255,255,0.4),inset -2px -1px 60px rgba(0,0,0,0.4),0 0 1px #000;animation-delay:200ms;}
-.ball3{right:25%;top:150px;background:-webkit-linear-gradient(top,#eeeeee,green);box-shadow:inset 0 -1px 15px rgba(255,255,255,0.4),inset -2px -1px 60px rgba(0,0,0,0.4),0 0 1px #000;animation-delay:100ms;}
-.ball4{right:10%;top:150px;background:-webkit-linear-gradient(top,#eeeeee,yellow);box-shadow:inset 0 -1px 15px rgba(255,255,255,0.4),inset -2px -1px 60px rgba(0,0,0,0.4),0 0 1px #000;animation-delay:300ms;}
+.ball1{left:10%;top:150px;background:-webkit-linear-gradient(top,#eeeeee,red);background:-moz-linear-gradient(top,#eeeeee,red);background:-o-linear-gradient(top,#eeeeee,red);box-shadow:inset 0 -1px 15px rgba(255,255,255,0.4),inset -2px -1px 60px rgba(0,0,0,0.4),0 0 1px #000;}
+.ball2{left:25%;top:150px;background:-webkit-linear-gradient(top,#eeeeee,blue);background:-moz-linear-gradient(top,#eeeeee,blue);background:-o-linear-gradient(top,#eeeeee,blue);box-shadow:inset 0 -1px 15px rgba(255,255,255,0.4),inset -2px -1px 60px rgba(0,0,0,0.4),0 0 1px #000;}
+.ball3{right:25%;top:150px;background:-webkit-linear-gradient(top,#eeeeee,green);background:-moz-linear-gradient(top,#eeeeee,green);background:-o-linear-gradient(top,#eeeeee,green);box-shadow:inset 0 -1px 15px rgba(255,255,255,0.4),inset -2px -1px 60px rgba(0,0,0,0.4),0 0 1px #000;}
+.ball4{right:10%;top:150px;background:-webkit-linear-gradient(top,#eeeeee,yellow);background:-moz-linear-gradient(top,#eeeeee,yellow);background:-o-linear-gradient(top,#eeeeee,yellow);box-shadow:inset 0 -1px 15px rgba(255,255,255,0.4),inset -2px -1px 60px rgba(0,0,0,0.4),0 0 1px #000;}
 
 .crystal{position:fixed;left:50%;margin-left:-100px;margin-top:-350px;width:200px;height:350px;cursor:pointer;background:url(../img/crystal.png) left bottom no-repeat;background-size:100%;transform-origin: 50% -350px;}
 .crystalrope{width:40px;height:230px;margin-left:auto;margin-right:auto;margin-top:-80px;background:url(../img/crystalrope.png) no-repeat;background-size:100%;}
