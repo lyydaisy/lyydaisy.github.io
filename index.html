@@ -62,12 +62,14 @@
         });
         $(".ball,.crystal").each(function(index,ele){
             $(ele).bind("mouseover",function(event){
+                event = event||window.event;
                 var target = event.fromElement||event.relatedTarget;
                 if(target.className=="ballText"){
                     return false;
                 }
                 $(this).removeClass("ballRotate ballRotateStart").addClass("ballHover");
             }).bind("mouseout",function(event){
+                event = event||window.event;
                 var target = event.fromElement||event.relatedTarget;
                 if($(target).hasClass("ball")){
                     return false;
