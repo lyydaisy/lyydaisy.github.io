@@ -60,23 +60,10 @@
                 $(".sycp,.lyy").hide().removeClass("sycpfade").fadeIn();
             },1000);
         });
-        $(".ball,.crystal").each(function(index,ele){
+        $(".ballText,.crystal").each(function(index,ele){
             $(ele).bind("mouseenter",function(event){
-                /*event = event||window.event;
-                var from = event.fromElement||event.relatedTarget;
-                var current = event.currentElement||event.currentTarget;
-                if($(current).hasClass("ball")&&$(from).hasClass("ballText")){
-                    return false;
-                }*/
-                if($(this).hasClass("ballHover")){return false;}
                 $(this).removeClass("ballRotate ballRotateStart").addClass("ballHover");
             }).bind("mouseleave",function(event){
-                /*event = event||window.event;
-                var from = event.fromElement||event.relatedTarget;
-                var current = event.currentElement||event.currentTarget;
-                if($(current).hasClass("ball")&&$(from).hasClass("ballText")){
-                    return false;
-                }*/
                 var that = $(this);
                 if(!that.hasClass("ballHide")&&!that.hasClass("crystalHide")){
                     that.removeClass("ballHover").addClass("ballHoverOut");
