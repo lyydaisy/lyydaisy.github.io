@@ -61,7 +61,7 @@ a,a:hover{text-decoration:none;color:black;}
 .ballHide{margin-top:-320px;}
 .ballText{text-align:center;line-height:120px;font-size:24px;text-shadow:0 1px 1px #fff;}
 
-.crystal{position:fixed;left:50%;margin-left:-100px;width:200px;height:350px;cursor:pointer;background:url(../img/crystal.png) left bottom no-repeat;background-size:100%;transform-origin: 50% -350px;}
+.crystal{position:fixed;left:50%;margin-left:-100px;width:200px;height:350px;cursor:pointer;background:url(../img/crystal.png) left bottom no-repeat;background-size:100%;transform-origin: 50% -50px;}
 .crystalrope{width:40px;height:230px;margin-left:auto;margin-right:auto;margin-top:-80px;background:url(../img/crystalrope.png) no-repeat;background-size:100%;}
 .crystalHide{margin-top:-350px;}
 .crystalText{position:absolute;left:35px;top:210px;}
