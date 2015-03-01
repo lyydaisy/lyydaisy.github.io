@@ -62,9 +62,16 @@
         });
         $(".ballText,.crystal").each(function(index,ele){
             $(ele).bind("mouseenter",function(event){
-                $(this).parent().removeClass("ballRotate ballRotateStart").addClass("ballHover");
+                var that = $(this);
+                if(that.hasClass("ballText")){
+                    that = that.parent();
+                }
+                that.removeClass("ballRotate ballRotateStart").addClass("ballHover");
             }).bind("mouseleave",function(event){
-                var that = $(this).parent();
+                var that = $(this);
+                if(that.hasClass("ballText")){
+                    that = that.parent();
+                }
                 if(!that.hasClass("ballHide")&&!that.hasClass("crystalHide")){
                     that.removeClass("ballHover").addClass("ballHoverOut");
                     setTimeout(function(){
