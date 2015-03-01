@@ -64,14 +64,14 @@
             $(ele).bind("mouseover",function(event){
                 event = event||window.event;
                 var target = event.fromElement||event.relatedTarget;
-                if(target.className=="ballText"){
+                if($(target).hasClass("ballText")||target.nodeName=="A"){
                     return false;
                 }
                 $(this).removeClass("ballRotate ballRotateStart").addClass("ballHover");
             }).bind("mouseout",function(event){
                 event = event||window.event;
                 var target = event.fromElement||event.relatedTarget;
-                if($(target).hasClass("ball")){
+                if($(target).hasClass("ballText")||target.nodeName=="A"){
                     return false;
                 }
                 var that = $(this);
