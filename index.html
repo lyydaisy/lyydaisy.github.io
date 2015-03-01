@@ -71,8 +71,8 @@
             }).bind("mouseout",function(event){
                 event = event||window.event;
                 var from = event.fromElement||event.relatedTarget;
-                var to = event.toElement;
-                if($(from).hasClass("ball")&&($(to).hasClass("ballText")||to.nodeName=="A")){
+                var current = event.currentElement;
+                if($(current).hasClass("ball")&&$(from).hasClass("ballText")){
                     return false;
                 }
                 var that = $(this);
