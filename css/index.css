@@ -67,7 +67,7 @@ a,a:hover{text-decoration:none;color:black;}
 .crystalText{position:absolute;left:35px;top:210px;}
 
 .daisy{display:none;position:fixed;left:0;bottom:0;height:200px;width:100%;font-size:160px;line-height:200px;text-align:center;font-family: serif;
-text-shadow: 1px -1px rgba(100, 100, 100,1.0),2px -2px rgba(100, 100, 100,1.0),3px -3px rgba(100, 100, 100,1.0),4px -4px rgba(100, 100, 100,1.0),5px -5px rgba(100, 100, 100,1.0),6px -6px rgba(100, 100, 100,1.0);
+text-shadow: 1px -1px rgba(160, 160, 160,1.0),2px -2px rgba(160, 160, 160,1.0),3px -3px rgba(160, 160, 160,1.0),4px -4px rgba(160, 160, 160,1.0),5px -5px rgba(160, 160, 160,1.0),6px -6px rgba(160, 160, 160,1.0);
 }
 
 .ballFall{animation:ballFall 1s;margin-top:0px;}
