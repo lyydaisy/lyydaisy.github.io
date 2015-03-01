@@ -61,9 +61,17 @@
             },1000);
         });
         $(".ball,.crystal").each(function(index,ele){
-            $(ele).bind("mouseover",function(){
+            $(ele).bind("mouseover",function(event){
+                var target = event.fromElement||event.relatedTarget;
+                if(target.className=="ballText"){
+                    return false;
+                }
                 $(this).removeClass("ballRotate ballRotateStart").addClass("ballHover");
-            }).bind("mouseout",function(){
+            }).bind("mouseout",function(event){
+                var target = event.fromElement||event.relatedTarget;
+                if($(target).hasClass("ball")){
+                    return false;
+                }
                 var that = $(this);
                 if(!that.hasClass("ballHide")&&!that.hasClass("crystalHide")){
                     that.removeClass("ballHover").addClass("ballHoverOut");
