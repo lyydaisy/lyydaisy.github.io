@@ -64,6 +64,7 @@ a,a:hover{text-decoration:none;color:black;}
 .crystal{position:fixed;left:50%;margin-left:-100px;width:200px;height:350px;cursor:pointer;background:url(../img/crystal.png) left bottom no-repeat;background-size:100%;transform-origin: 50% -350px;}
 .crystalrope{width:40px;height:230px;margin-left:auto;margin-right:auto;margin-top:-80px;background:url(../img/crystalrope.png) no-repeat;background-size:100%;}
 .crystalHide{margin-top:-350px;}
+.crystalText{position:absolute;left:35px;top:210px;}
 
 .ballFall{animation:ballFall 1s;margin-top:0px;}
 .ballUp{animation:ballUp 1s;margin-top:-350px;}
