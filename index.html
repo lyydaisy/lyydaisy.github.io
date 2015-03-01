@@ -34,12 +34,14 @@
             <p class="crystalText">Home</p>
             <div class="crystalrope"></div>
         </div>
+        <div class="daisy">DAISY</div>
 
         <script>
         $(".lyy a").bind("click",function(){
             $(".sycp,.lyy").addClass("sycpfade");
             setTimeout(function(){
                 $(".ball,.crystal").removeClass("ballUp").addClass("ballFall");
+                $(".daisy").slideDown();
                 setTimeout(function(){
                     $(".ball").removeClass("ballFall ballHide").addClass("ballRotateStart");
                     $(".crystal").removeClass("ballFall crystalHide").addClass("ballRotateStart");
@@ -52,6 +54,7 @@
         $(".crystal").bind("click",function(){
             $(".ball").removeClass("ballFall ballRotateStart ballRotate").addClass("ballUp ballHide");
             $(".crystal").removeClass("ballHover ballFall ballRotateStart ballRotate").addClass("ballUp crystalHide");
+            $(".daisy").slideUp();
             setTimeout(function(){
                 $(".sycp,.lyy").hide().removeClass("sycpfade").fadeIn();
             },1000);
