@@ -18,11 +18,19 @@
             </p>
         </div>
 
-        <div class="ball ball1"></div>
-        <div class="ball ball2"></div>
-        <div class="ball ball3"></div>
-        <div class="ball ball4"></div>
-        <div class="crystal">
+        <div class="ball ballHide ball1">
+            <p class="ballText">简介</p>
+        </div>
+        <div class="ball ballHide ball2">
+            <p class="ballText">杂烩</p>
+        </div>
+        <div class="ball ballHide ball3">
+            <p class="ballText">博客</p>
+        </div>
+        <div class="ball ballHide ball4">
+            <p class="ballText">微博</p>
+        </div>
+        <div class="crystal crystalHide">
             <div class="crystalrope"></div>
         </div>
 
@@ -30,14 +38,38 @@
         $(".lyy a").bind("click",function(){
             $(".sycp,.lyy").addClass("sycpfade");
             setTimeout(function(){
-                $(".ball,.crystal").removeClass("ballUp").addClass("ballFall");   
+                $(".ball,.crystal").removeClass("ballUp").addClass("ballFall");
+                setTimeout(function(){
+                    $(".ball").removeClass("ballFall ballHide").addClass("ballRotateStart");
+                    $(".crystal").removeClass("ballFall crystalHide").addClass("ballRotateStart");
+                    setTimeout(function(){
+                        $(".ball,.crystal").addClass("ballRotate");
+                    },500);
+                },1000);  
             },500);
         });
         $(".crystal").bind("click",function(){
-            $(".ball,.crystal").removeClass("ballFall").addClass("ballUp");
+            $(".ball").removeClass("ballFall ballRotateStart ballRotate").addClass("ballUp ballHide");
+            $(".crystal").removeClass("ballHover ballFall ballRotateStart ballRotate").addClass("ballUp crystalHide");
             setTimeout(function(){
                 $(".sycp,.lyy").hide().removeClass("sycpfade").fadeIn();
             },1000);
+        });
+        $(".ball,.crystal").each(function(index,ele){
+            $(ele).bind("mouseover",function(){
+                $(this).removeClass("ballRotate ballRotateStart").addClass("ballHover");
+            }).bind("mouseout",function(){
+                var that = $(this);
+                if(!that.hasClass("ballHide")&&!that.hasClass("crystalHide")){
+                    that.removeClass("ballHover").addClass("ballHoverOut");
+                    setTimeout(function(){
+                        that.removeClass("ballHoverOut").addClass("ballRotateStart");
+                        setTimeout(function(){
+                            that.addClass("ballRotate");
+                        },500);
+                    },1000);
+                }
+            });
         });
         $(function(){
             $(".preload").html('\
