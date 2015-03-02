@@ -51,6 +51,7 @@
         var clientHeight = $(window).height();
         var dds = $("dd");
         var articles = $(".content article");
+        var isFirefox = navigator.userAgent.indexOf("Firefox")>=0?true:false;
         articles.css({"height":clientHeight+"px"});
         dds.bind("click",function(){
             $(".current").removeClass("current");
@@ -69,6 +70,8 @@
         }
 
         function wheelHandler(e){
+            e.preventDefault();
+            e.returnValue = false;
             unbindMouseWheel();
             if(window.isScrolling){
                 return false;
@@ -79,7 +82,7 @@
                 var current = $(".current");
                 var index = dds.index(current);
                 var size = dds.size();
-                if(e.wheelDelta>0){
+                if((isFirefox&&e.deltaY<0)||(!isFirefox&&e.wheelDelta>0)){
                     if(index==0){
                         bindMouseWheel();
                         window.isScrolling = false;
@@ -110,13 +113,23 @@
         }
 
         function bindMouseWheel(){
-            document.body.removeEventListener("mousewheel",returnFalse);
-            document.body.addEventListener("mousewheel", wheelHandler);
+            if(isFirefox){
+                document.body.removeEventListener("wheel",returnFalse);
+                document.body.addEventListener("wheel", wheelHandler);
+            }else{
+                document.body.removeEventListener("mousewheel",returnFalse);
+                document.body.addEventListener("mousewheel", wheelHandler);
+            }
         }
 
         function unbindMouseWheel(){
-            document.body.removeEventListener("mousewheel",wheelHandler);
-            document.body.addEventListener("mousewheel", returnFalse);
+            if(isFirefox){
+                document.body.removeEventListener("wheel",wheelHandler);
+                document.body.addEventListener("wheel", returnFalse);
+            }else{
+                document.body.removeEventListener("mousewheel",wheelHandler);
+                document.body.addEventListener("mousewheel", returnFalse);
+            }
         }
         </script>
     </body>
