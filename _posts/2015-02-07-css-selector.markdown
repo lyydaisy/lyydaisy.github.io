@@ -92,9 +92,9 @@ div a{text-decoration:none;}/*选中div中所有的a*/
 div > a{text-decoration:none;}/*选中div的直接子元素a*/
 {%endhighlight%}
 
-##兄弟选择
-相邻兄弟选择器使用“＋”或者“~”：
+##同胞选择
+同胞选择器使用“＋”或者“~”：
 {%highlight css%}
-h1 + p {margin-top:50px;}/*选择紧跟在h1后面的p*/
-h1 ~ p {margin-top:20px;}/*选择在h1后面的所有的p*/
+h1 + p {margin-top:50px;}/*紧邻同胞，选择紧跟在h1后面的p*/
+h1 ~ p {margin-top:20px;}/*一般同胞，选择在h1后面的所有的p*/
 {%endhighlight%}
