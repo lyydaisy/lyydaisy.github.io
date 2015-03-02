@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>about lyydaisy</title>
+        <script src="./js/jquery-1.11.2.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        <style type="text/css">
+        *{margin:0;padding:0;}
+        .sidebar{position:fixed;left:0;top:0;}
+        .sidebar dd{width:200px;height:50px;margin:5px;border:1px solid black;font-size:20px;text-align:center;line-height:50px;cursor:pointer;}
+        .sidebar dd.current{background:green;}
+        .content article{width:100%;padding-left:300px;}
+        </style>
+    </head>
+    <body>
+        <aside class="sidebar">
+            <dl>
+                <dd class="current">我的信息</dd>
+                <dd>我的学校</dd>
+                <dd>我的简介</dd>
+            </dl>
+        </aside>
+        <section class="content">
+            <article>
+                <header>我的信息</header>
+                <div>我叫lyy</div>
+            </article>
+            <article>
+                <header>我的学校</header>
+                <div>我毕业于浙江外国语学院</div>
+            </article>
+            <article>
+                <header>我的简介</header>
+                <div>我热爱编程</div>
+            </article>
+        </section>
+        <script type="text/javascript">
+        var clientWidth = $(window).width();
+        var clientHeight = $(window).height();
+        var dds = $("dd");
+        var articles = $(".content article");
+        articles.css({"height":clientHeight+"px"});
+        articles.each(function(i,o){
+            $(o).css("background",getRandomRGBColor);
+        });
+        dds.bind("click",function(){
+            $(".current").removeClass("current");
+            $(this).addClass("current");
+            var index = dds.index($(this));
+            scroll(index);
+        });
+
+        if(navigator.userAgent.indexOf("Firefox")>=0){
+
+        }
+        bindMouseWheel();
+
+        function getRandomRGBColor(){
+            var r = Math.floor(Math.random()*255);
+            var g = Math.floor(Math.random()*255);
+            var b = Math.floor(Math.random()*255);
+            return "rgb("+r+","+g+","+b+")";
+        }
+
+        function scroll(index){
+            $("body").animate({"scrollTop":index*clientHeight+"px"},200);
+            setTimeout(function(){
+                bindMouseWheel();
+                window.isScrolling = false;
+            },1000);
+        }
+
+        function wheelHandler(e){
+            unbindMouseWheel();
+            if(window.isScrolling){
+                return false;
+            }else{
+                window.isScrolling = true;
+            }
+            setTimeout(function(){
+                var current = $(".current");
+                var index = dds.index(current);
+                var size = dds.size();
+                if(e.wheelDelta>0){
+                    if(index==0){
+                        bindMouseWheel();
+                        window.isScrolling = false;
+                        return false;
+                    }else{
+                        current.prev().addClass("current");
+                        current.removeClass("current");
+                        scroll(index-1);
+                    }
+                }else{
+                    if(index+1==size){
+                        bindMouseWheel();
+                        window.isScrolling = false;
+                        return false;
+                    }else{
+                        current.next().addClass("current");
+                        current.removeClass("current");
+                        scroll(index+1);
+                    } 
+                }
+            },500);
+            return false;
+        }
+
+        function returnFalse(event){
+            event.preventDefault();
+            return false;
+        }
+
+        function bindMouseWheel(){
+            document.body.removeEventListener("mousewheel",returnFalse);
+            document.body.addEventListener("mousewheel", wheelHandler);
+        }
+
+        function unbindMouseWheel(){
+            document.body.removeEventListener("mousewheel",wheelHandler);
+            document.body.addEventListener("mousewheel", returnFalse);
+        }
+        </script>
+    </body>
+</html>
