@@ -9,17 +9,21 @@
         <style type="text/css">
         *{margin:0;padding:0;}
         .sidebar{position:fixed;left:0;top:0;}
-        .sidebar dd{width:200px;height:50px;margin:5px;border:1px solid black;font-size:20px;text-align:center;line-height:50px;cursor:pointer;}
-        .sidebar dd.current{background:green;}
+        .sidebar dd{width:200px;height:50px;margin:5px;border:1px solid black;font-size:20px;text-align:center;line-height:50px;cursor:pointer;background:#fff;}
+        .sidebar dd.current,.sidebar dd:hover{background:green;}
+        .circle{display:inline-block;width:30px;height:30px;border-radius:15px;background:blue;vertical-align:-7px;}
+        .triangle{display: inline-block;margin: 0 3px;border-bottom: 10px solid #fff;border-top: 10px solid #fff;border-left: 0 none transparent;border-right: 10px solid #0066CC;line-height: 0;vertical-align: -3px;}
+        dd:hover .circle,.current .circle{transform:scale(1.2);}
+        dd:hover .triangle,.current .triangle{border-bottom: 10px solid green;border-top: 10px solid green;}
         .content article{width:100%;padding-left:300px;}
         </style>
     </head>
     <body>
         <aside class="sidebar">
             <dl>
-                <dd class="current">我的信息</dd>
-                <dd>我的学校</dd>
-                <dd>我的简介</dd>
+                <dd class="current"><b class="circle"></b><b class="triangle"></b>我的信息</dd>
+                <dd><b class="circle"></b><b class="triangle"></b>我的学校</dd>
+                <dd><b class="circle"></b><b class="triangle"></b>我的简介</dd>
             </dl>
         </aside>
         <section class="content">
@@ -51,10 +55,6 @@
             var index = dds.index($(this));
             scroll(index);
         });
-
-        if(navigator.userAgent.indexOf("Firefox")>=0){
-
-        }
         bindMouseWheel();
 
         function getRandomRGBColor(){
