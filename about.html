@@ -18,7 +18,10 @@
         .triangle{display: inline-block;margin: 0 3px;border-bottom: 10px solid #fff;border-top: 10px solid #fff;border-left: 0 none transparent;border-right: 10px solid #0066CC;line-height: 0;vertical-align: -3px;margin:0 10px;}
         dd:hover .circle,.current .circle{transform:scale(1.2);}
         dd:hover .triangle,.current .triangle{border-bottom: 10px solid green;border-top: 10px solid green;}
-        .content article{width:100%;padding-left:300px;}
+        .content article{width:100%;padding-left:300px;background-size:100%;}
+        .content1{background:url(./img/aboutBg1.png) no-repeat;}
+        .content2{background:url(./img/aboutBg2.png) no-repeat;}
+        .content3{background:url(./img/aboutBg3.jpg) no-repeat;}
         </style>
     </head>
     <body>
@@ -30,15 +33,15 @@
             </dl>
         </aside>
         <section class="content">
-            <article>
+            <article class="content1">
                 <header>我的信息</header>
                 <div>我叫lyy</div>
             </article>
-            <article>
+            <article class="content2">
                 <header>我的学校</header>
                 <div>我毕业于浙江外国语学院</div>
             </article>
-            <article>
+            <article class="content3">
                 <header>我的简介</header>
                 <div>我热爱编程</div>
             </article>
@@ -49,9 +52,6 @@
         var dds = $("dd");
         var articles = $(".content article");
         articles.css({"height":clientHeight+"px"});
-        articles.each(function(i,o){
-            $(o).css("background",getRandomRGBColor);
-        });
         dds.bind("click",function(){
             $(".current").removeClass("current");
             $(this).addClass("current");
@@ -59,13 +59,6 @@
             scroll(index);
         });
         bindMouseWheel();
-
-        function getRandomRGBColor(){
-            var r = Math.floor(Math.random()*255);
-            var g = Math.floor(Math.random()*255);
-            var b = Math.floor(Math.random()*255);
-            return "rgb("+r+","+g+","+b+")";
-        }
 
         function scroll(index){
             $("body").animate({"scrollTop":index*clientHeight+"px"},200);
