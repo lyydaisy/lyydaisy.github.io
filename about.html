@@ -61,7 +61,7 @@
         bindMouseWheel();
 
         function scroll(index){
-            $("body").animate({"scrollTop":index*clientHeight+"px"},200);
+            $("html,body").animate({"scrollTop":index*clientHeight+"px"},200);
             setTimeout(function(){
                 bindMouseWheel();
                 window.isScrolling = false;
