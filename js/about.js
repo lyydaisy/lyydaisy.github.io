@@ -54,7 +54,7 @@ function wheelHandler(e){
                 scroll(index+1);
             } 
         }
-    },500);
+    },300);
     return false;
 }
 
