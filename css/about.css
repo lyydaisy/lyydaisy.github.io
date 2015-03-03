@@ -6,8 +6,13 @@
     from{margin-left:-500px;}
     to{margin-left:200px;}
 }
+@keyframes hover{
+    0%{margin-top:0px;}
+    100%{margin-top:50px;}
+}
 *{margin:0;padding:0;}
 body{overflow:hidden;font-family:'微软雅黑',tomaha,arial,simsun;line-height:1.5em;}
+a{text-decoration:none;color:black;}
 nav{position:absolute;right:10px;top:10px;height:50px;z-index:10;}
 nav li{float:left;list-style-type: none;}
 .sidebar{position:fixed;left:20px;top:100px;font-family:"hw7";}
@@ -37,3 +42,7 @@ article.content3{background-image:url(../img/finally.jpg);}
 ul{font-size: 20px;line-height: 30px;letter-spacing: .1em}
 .wordspace{width:44px;display:inline-block;}
 
+.crystal{position:fixed;right:20px;top:0;margin-left:-100px;width:200px;height:280px;cursor:pointer;background:url(../img/crystal2.png) no-repeat;background-size:80%;background-position:20px 125px;transform-origin: 50% -50px;}
+.crystalrope{width:40px;height:230px;margin-left:auto;margin-right:auto;margin-top:-80px;background:url(../img/crystalrope.png) no-repeat;background-size:100%;}
+.crystalText{position:absolute;left:80px;top:185px;}
+.crystal:hover{animation:hover 1s;margin-top:50px;}
