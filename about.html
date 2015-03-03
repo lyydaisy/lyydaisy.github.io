@@ -10,6 +10,9 @@
         *{margin:0;padding:0;}
         body{overflow:hidden;font-family: '微软雅黑',tomaha,arial,simsun;}
         li{list-style-type: none;}
+        nav{position:fixed;left:0;top:0;height:50px;width:100%;padding:10px;}
+        nav ol{float:right;}
+        nav li{float:left;}
         .sidebar{position:fixed;left:20px;top:100px;}
         .sidebar dd{width:160px;height:50px;margin:10px;font-size:14px;text-align:center;line-height:50px;cursor:pointer;background:#fff;border-radius:30px;}
         .sidebar dd.current,.sidebar dd:hover{background:green;color:white;font-size:18px;width:180px;}
@@ -32,7 +35,11 @@
         </style>
     </head>
     <body>
-        
+        <nav>
+            <ol>
+                <li><a href="./"><img src="./img/home.png" height="30"></a></li>
+            </ol>
+        </nav>
         <aside class="sidebar">
             <dl>
                 <dd class="current"><b class="circle circle1"></b><b class="triangle"></b>个人信息</dd>
