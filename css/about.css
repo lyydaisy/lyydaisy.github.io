@@ -3,8 +3,8 @@
     src:url(../font/hw7.ttf);
 }
 @keyframes swing{
-    0%{margin-left:-300px;}
-    100%{margin-left:0px;}
+    from{margin-left:-300px;}
+    to{margin-left:0px;}
 }
 *{margin:0;padding:0;}
 body{overflow:hidden;font-family:'微软雅黑',tomaha,arial,simsun;}
@@ -32,5 +32,5 @@ article.content3{background-image:url(../img/finally.jpg);}
 
 .contact{position:fixed;width:300px;height:180px;left:50%;bottom:50px;margin-left:-150px;background-image:url(../img/contact.png);background-size:100%;background-repeat:no-repeat;}
 .contact dl{padding:30px;font-size:20px;line-height:35px;}
-.contactSwing{animation:swing 10s linear 0 infinite alternate;}
+.contactSwing{animation:swing 10s linear 0s infinite alternate;}
 
