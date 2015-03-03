@@ -11,8 +11,8 @@ body{overflow:hidden;font-family:'微软雅黑',tomaha,arial,simsun;line-height:
 nav{position:absolute;right:10px;top:10px;height:50px;z-index:10;}
 nav li{float:left;list-style-type: none;}
 .sidebar{position:fixed;left:20px;top:100px;font-family:"hw7";}
-.sidebar dd{width:160px;height:50px;margin:20px;font-size:14px;text-align:center;line-height:50px;cursor:pointer;background:#ffff66;border-radius:30px;}
-.sidebar dd.current,.sidebar dd:hover{background:rgb(186,217,229);color:white;font-size:18px;width:180px;}
+.sidebar dd{width:160px;height:50px;margin:20px;font-size:18px;text-align:center;line-height:50px;cursor:pointer;background:#ffff66;border-radius:25px;}
+.sidebar dd.current,.sidebar dd:hover{background:rgb(186,217,229);color:white;font-size:22px;width:180px;}
 .circle{display:inline-block;width:30px;height:30px;vertical-align:-7px;}
 .circle1{background:url(../img/1.png) no-repeat;background-size:100%;}
 .circle2{background:url(../img/3.png) no-repeat;background-size:100%;}
@@ -21,7 +21,7 @@ nav li{float:left;list-style-type: none;}
 dd:hover .circle,.current .circle{transform:scale(1.2);}
 dd:hover .triangle,.current .triangle{border-bottom: 10px solid rgb(186,217,229);border-top: 10px solid rgb(186,217,229);}
 .content article{width:100%;background-repeat:no-repeat;background-size:100%;overflow: hidden;}
-.content article > div{margin-left:300px;padding:30px;margin-top:110px;background:rgba(0,0,0,0.3);}
+.content article > div{margin-left:300px;padding:30px;margin-top:110px;background:rgba(0,0,0,0.1);}
 article.content1{background-image:url(../img/first.jpg);}
 article.content2{background-image:url(../img/second.jpg);background-size:40%;background-position:right bottom;}
 article.content3{background-image:url(../img/finally.jpg);}
