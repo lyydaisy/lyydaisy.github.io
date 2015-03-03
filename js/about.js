@@ -10,6 +10,10 @@ dds.bind("click",function(){
     var index = dds.index($(this));
     scroll(index);
 });
+$(window).bind("resize",function(){
+    clientHeight = $(window).height();
+    articles.css({"height":clientHeight+"px"});
+});
 bindMouseWheel();
 scroll(0);
 
