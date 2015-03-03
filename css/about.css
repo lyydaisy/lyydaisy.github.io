@@ -7,10 +7,9 @@
     to{margin-left:0px;}
 }
 *{margin:0;padding:0;}
-body{overflow:hidden;font-family:'微软雅黑',tomaha,arial,simsun;}
-li{list-style-type: none;}
+body{overflow:hidden;font-family:'微软雅黑',tomaha,arial,simsun;line-height:1.5em;}
 nav{position:absolute;right:10px;top:10px;height:50px;z-index:10;}
-nav li{float:left;}
+nav li{float:left;list-style-type: none;}
 .sidebar{position:fixed;left:20px;top:100px;font-family:"hw7";}
 .sidebar dd{width:160px;height:50px;margin:20px;font-size:14px;text-align:center;line-height:50px;cursor:pointer;background:#ffff66;border-radius:30px;}
 .sidebar dd.current,.sidebar dd:hover{background:rgb(186,217,229);color:white;font-size:18px;width:180px;}
@@ -27,6 +26,8 @@ article.content1{background-image:url(../img/first.jpg);}
 article.content2{background-image:url(../img/second.jpg);background-size:40%;background-position:right bottom;}
 article.content3{background-image:url(../img/finally.jpg);}
 .contentbody{width:500px;padding:20px;font-size:16px;border-radius: 30px;}
+.contentbody ul{margin-left:20px;}
+.contentbody li{list-style-type: decimal;}
 .header{position: fixed;left:0;top:0;width:100%;height: 50px;background: rgb(186,217,229);border-radius: 30px 0px 30px 0px;box-shadow: 0 12px 8px -9px #555;padding: 10px 0;line-hegiht:50px;}
 .header h1{padding: 9px 12px 0;font-family:"hw7";font-weight: 900;font-size: 2.2em;line-height: 1;letter-spacing: -.025em;color: black;}
 
