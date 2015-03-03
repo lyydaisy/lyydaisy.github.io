@@ -3,8 +3,8 @@
     src:url(../font/hw7.ttf);
 }
 @keyframes swing{
-    from{margin-left:-300px;}
-    to{margin-left:0px;}
+    from{margin-left:-500px;}
+    to{margin-left:200px;}
 }
 *{margin:0;padding:0;}
 body{overflow:hidden;font-family:'微软雅黑',tomaha,arial,simsun;line-height:1.5em;}

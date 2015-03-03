@@ -18,7 +18,7 @@ $(window).bind("resize",function(){
 bindMouseWheel();
 scroll(0);
 
-$(".contact").animate({"marginLeft":"-300px"},5000,"linear",function(){
+$(".contact").animate({"marginLeft":"-500px"},5000,"linear",function(){
     $(this).addClass("contactSwing");
 });
 
