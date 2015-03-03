@@ -9,7 +9,7 @@
         <style type="text/css">
         *{margin:0;padding:0;}
         body{overflow:hidden;font-family: '微软雅黑',tomaha,arial,simsun;}
-        .sidebar{position:fixed;left:20px;top:20px;}
+        .sidebar{position:fixed;left:20px;top:70px;}
         .sidebar dd{width:160px;height:50px;margin:10px;font-size:14px;text-align:center;line-height:50px;cursor:pointer;background:#fff;border-radius:30px;}
         .sidebar dd.current,.sidebar dd:hover{background:green;color:white;font-size:18px;width:180px;}
         .circle{display:inline-block;width:37px;height:30px;vertical-align:-7px;}
@@ -19,7 +19,8 @@
         .triangle{display: inline-block;margin: 0 3px;border-bottom: 10px solid #fff;border-top: 10px solid #fff;border-left: 0 none transparent;border-right: 10px solid #0066CC;line-height: 0;vertical-align: -4px;margin:0 5px;}
         dd:hover .circle,.current .circle{transform:scale(1.2);}
         dd:hover .triangle,.current .triangle{border-bottom: 10px solid green;border-top: 10px solid green;}
-        .content article{width:100%;padding-left:300px;background-size:100%;}
+        .content article{width:100%;background-size:100%;}
+        .content article > div{padding-left:300px;}
         .content1{background:url(./img/aboutBg1.png) no-repeat;}
         .content2{background:url(./img/aboutBg2.png) no-repeat;}
         .content3{background:url(./img/aboutBg3.jpg) no-repeat;}
@@ -40,10 +41,10 @@
         <section class="content">
             <article class="content1">
                 <header>
-            <section id="title">
-                <h1>个人简介</h1>
-            </section>
-        </header>
+                    <section id="title">
+                        <h1>个人简介</h1>
+                    </section>
+                </header>
                 <div class="t1">个人信息</div>
                 <div class="c1">
                     <ul>
@@ -54,7 +55,7 @@
                         <li>特长：绘画，设计</li>
                         <li>求职意向：CSS前端开发，交互设计，网页设计等</li>
                     </ul>
-                    </div>
+                </div>
             </article>
             <article class="content2">
                 <div class="t2">个人技能</div>
