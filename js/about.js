@@ -1,6 +1,6 @@
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
-var dds = $("dd");
+var dds = $(".sidebar dd");
 var articles = $(".content article");
 var isFirefox = navigator.userAgent.indexOf("Firefox")>=0?true:false;
 articles.css({"height":clientHeight+"px"});
