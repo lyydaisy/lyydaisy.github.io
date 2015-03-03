@@ -27,11 +27,12 @@ article.content2{background-image:url(../img/second.jpg);background-size:40%;bac
 article.content3{background-image:url(../img/finally.jpg);}
 .contentbody{width:500px;padding:20px;font-size:16px;border-radius: 30px;}
 .contentbody ul{margin-left:20px;}
-.contentbody li{list-style-type: decimal;}
+.contentbody li{list-style-type: none;}
 .header{position: fixed;left:0;top:0;width:100%;height: 50px;background: rgb(186,217,229);border-radius: 30px 0px 30px 0px;box-shadow: 0 12px 8px -9px #555;padding: 10px 0;line-hegiht:50px;}
 .header h1{padding: 9px 12px 0;font-family:"hw7";font-weight: 900;font-size: 2.2em;line-height: 1;letter-spacing: -.025em;color: black;}
 
 .contact{position:fixed;width:300px;height:180px;left:50%;bottom:50px;margin-left:-150px;background-image:url(../img/contact.png);background-size:100%;background-repeat:no-repeat;}
 .contact dl{padding:30px;font-size:20px;line-height:35px;}
 .contactSwing{animation:swing 10s linear 0s infinite alternate;}
+ul{font-size: 30px;line-height: 25px;letter-spacing: .6em;}
 
