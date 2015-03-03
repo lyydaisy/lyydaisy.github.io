@@ -13,6 +13,7 @@ dds.bind("click",function(){
 $(window).bind("resize",function(){
     clientHeight = $(window).height();
     articles.css({"height":clientHeight+"px"});
+    scroll(dds.index($(".current")));
 });
 bindMouseWheel();
 scroll(0);
