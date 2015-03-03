@@ -8,8 +8,11 @@
         <script src="./js/prefixfree.min.js"></script>
         <style type="text/css">
         *{margin:0;padding:0;}
-        body{overflow:hidden;}
-        .sidebar{position:fixed;left:20px;top:20px;}
+        body{overflow:hidden;font-family: '微软雅黑',tomaha,arial,simsun;}
+        li{list-style-type: none;}
+        nav{position:fixed;right:10px;top:0;height:50px;padding:10px;z-index:10;}
+        nav li{float:left;}
+        .sidebar{position:fixed;left:20px;top:100px;}
         .sidebar dd{width:160px;height:50px;margin:10px;font-size:14px;text-align:center;line-height:50px;cursor:pointer;background:#fff;border-radius:30px;}
         .sidebar dd.current,.sidebar dd:hover{background:green;color:white;font-size:18px;width:180px;}
         .circle{display:inline-block;width:37px;height:30px;vertical-align:-7px;}
@@ -19,17 +22,22 @@
         .triangle{display: inline-block;margin: 0 3px;border-bottom: 10px solid #fff;border-top: 10px solid #fff;border-left: 0 none transparent;border-right: 10px solid #0066CC;line-height: 0;vertical-align: -4px;margin:0 5px;}
         dd:hover .circle,.current .circle{transform:scale(1.2);}
         dd:hover .triangle,.current .triangle{border-bottom: 10px solid green;border-top: 10px solid green;}
-        .content article{width:100%;padding-left:300px;background-size:100%;}
-        .content1{background:url(./img/first.jpg) no-repeat;}
-        .content2{background:url(./img/second.jpg) no-repeat;}
-        .content3{background:url(./img/second.jpg) no-repeat;}
-        header{position: relative;height: 50px;margin: 10px 0;background: #ffccff;border-radius: 30px 0px 30px 0px;box-shadow: 0 12px 8px -9px #555;padding: 10px;}
-        header section#title{position: absolute;width: 300px;height: 65px;left: 0px;top: 0;}
+        .content article{width:100%;background-size:100%;}
+        .content article > div{margin-left:300px;margin-top:40px;padding:30px;background:rgba(0,0,0,0.3);}
+        .content1{background:url(./img/first.png) no-repeat;}
+        .content2{background:url(./img/second.png) no-repeat;}
+        .content3{background:url(./img/last.jpg) no-repeat;}
+        .contentbody{width:500px;padding:20px;font-size:16px;border-radius: 30px;}
+        header{position: relative;height: 50px;background: #ffccff;border-radius: 30px 0px 30px 0px;box-shadow: 0 12px 8px -9px #555;padding: 10px;line-hegiht:50px;}
         header h1{padding: 9px 12px 0;font-family: "CrimsonRoman",georgia,times,serif;font-weight: 900;font-size: 2.2em;line-height: 1;letter-spacing: -.025em;color: black;}
         </style>
     </head>
     <body>
-        
+        <nav>
+            <ol>
+                <li><a href="./"><img src="./img/home.png" height="40"></a></li>
+            </ol>
+        </nav>
         <aside class="sidebar">
             <dl>
                 <dd class="current"><b class="circle circle1"></b><b class="triangle"></b>个人信息</dd>
@@ -40,12 +48,9 @@
         <section class="content">
             <article class="content1">
                 <header>
-            <section id="title">
-                <h1>个人简介</h1>
-            </section>
-        </header>
-                <div class="t1">个人信息</div>
-                <div class="c1">
+                    <h1>个人简介</h1>
+                </header>
+                <div class="contentbody">
                     <ul>
                         <li>姓名：李媛媛</li>
                         <li>性别：女</li>
@@ -54,11 +59,13 @@
                         <li>特长：绘画，设计</li>
                         <li>求职意向：CSS前端开发，交互设计，网页设计等</li>
                     </ul>
-                    </div>
+                </div>
             </article>
             <article class="content2">
-                <div class="t2">个人技能</div>
-                <div class="c2">
+                <header>
+                    <h1>个人技能</h1>
+                </header>
+                <div class="contentbody">
                     <ul>
                         <li>会GitHub，Html和Css等</li>
                         <li>会Photoshop等多种制图工具</li>
@@ -68,11 +75,13 @@
                 </div>
             </article>
             <article class="content3">
-                <div class="t3">自我评价</div>
-                <div class="c3">
-                    <textarea cols=80 rows=80>
+                <header>
+                    <h1>自我评价</h1>
+                </header>
+                <div class="contentbody">
+                    <p>
                         在一次很偶然的机会，我接触到了html和css，于是通过2个多月的自学时间来完成这个作品，其间很多磨难，但是也很快乐，如果你看完了我的网站就说明我成功了一半，我认为现在越来越多的人注重视觉享受，枯燥单一的页面不会产生多少回头率，给公司也带来一定的负面影响，相反有趣生动的页面才会吸引更多的人去关注你的网站，虽然我还有很多不懂，但是我会用心学习，苹果公司之所以风靡一时，其实有很大的几率是苹果公司注重客户的视觉享受，他的员工是程序员的同时也是艺术家，那将是我未来奋斗的方向。
-                    </textarea>
+                    </p>
                 </div>
             </article>
         </section>
