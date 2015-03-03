@@ -11,6 +11,7 @@ dds.bind("click",function(){
     scroll(index);
 });
 bindMouseWheel();
+scroll(0);
 
 function scroll(index){
     $("html,body").animate({"scrollTop":index*clientHeight+"px"},200);
