@@ -18,7 +18,7 @@ function scroll(index){
     setTimeout(function(){
         bindMouseWheel();
         window.isScrolling = false;
-    },1000);
+    },500);
 }
 
 function wheelHandler(e){
