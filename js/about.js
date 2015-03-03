@@ -18,6 +18,10 @@ $(window).bind("resize",function(){
 bindMouseWheel();
 scroll(0);
 
+$(".contact").animate({"marginLeft":"-300px"},5000,"linear",function(){
+    $(this).addClass("contactSwing");
+});
+
 function scroll(index){
     $("html,body").animate({"scrollTop":index*clientHeight+"px"},200);
 }
