@@ -20,10 +20,6 @@ scroll(0);
 
 function scroll(index){
     $("html,body").animate({"scrollTop":index*clientHeight+"px"},200);
-    setTimeout(function(){
-        bindMouseWheel();
-        window.isScrolling = false;
-    },500);
 }
 
 function wheelHandler(e){
@@ -48,6 +44,10 @@ function wheelHandler(e){
                 current.prev().addClass("current");
                 current.removeClass("current");
                 scroll(index-1);
+                setTimeout(function(){
+                    bindMouseWheel();
+                    window.isScrolling = false;
+                },500);
             }
         }else{
             if(index+1==size){
@@ -58,6 +58,10 @@ function wheelHandler(e){
                 current.next().addClass("current");
                 current.removeClass("current");
                 scroll(index+1);
+                setTimeout(function(){
+                    bindMouseWheel();
+                    window.isScrolling = false;
+                },500);
             } 
         }
     },300);
