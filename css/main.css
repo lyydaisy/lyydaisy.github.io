@@ -50,7 +50,7 @@ a, a:link, a:active {
 
 a:hover {
     color: #B3B3B3;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /**
