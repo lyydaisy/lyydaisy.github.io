@@ -57,7 +57,7 @@ a,a:hover{text-decoration:none;color:black;}
 .lyy{width:150px;height:150px;border-radius: 75px;background:white;text-align:center;line-height:120px;font-size:75px;font-family:"vs";position:fixed;left:50%;top:50%;margin-left:-75px;margin-top:-75px;cursor:pointer;}
 .lyy:hover{transform:scale(1.2,1.2);box-shadow:0 0 10px #000;}
 .sycpfade:hover{transform:scale(0,0);}
-.lyy a{color:red;font-family:"BeauRivageOne";}
+.lyy a{color:red;font-family:"vs";}
 
 .ball{width:120px;height:120px;border-radius:60px;position:fixed;transform-origin: 50% -150px;cursor:pointer;}
 .ball:before{content:" ";width:10px;height:200px;position:absolute;left:55px;top:-200px;background:url(../img/rope.png) repeat-y;background-size: 100%;}
