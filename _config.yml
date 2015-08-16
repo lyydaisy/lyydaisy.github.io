@@ -13,7 +13,7 @@ owner:
   name:           lyy daisy
   avatar:         100.jpeg
   bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  email:         
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
@@ -47,7 +47,7 @@ sass:
   style: compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-# permalink:   /:categories/:title/
+permalink:   /:categories/:title/
 
 # Amount of post to show on home page
 paginate: 5
