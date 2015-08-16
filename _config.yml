@@ -13,7 +13,7 @@ domain_name: 'http://lyydaisy.github.io'
 excerpt_separator:  '<!-- more -->'
 
 # Details for the RSS feed generator
-url:            'http://lyydaisy.github.io/jekyll/'
+url:            'http://lyydaisy.github.io/jekyll'
 staitcurl:    'http://lyydaisy.github.io'
 author:         'lyydaisy'
 
