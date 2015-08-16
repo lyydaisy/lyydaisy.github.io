@@ -33,10 +33,10 @@ pre {
 	background: #333333;
 }
 
-
-.pagination .previous,.pagination .next{display:inline-block;float:left;}
-.pagination .pages{display:inline-block;list-style-type: none;margin:0;padding:0;text-align:center;width:350px;float:left;}
-.pagination .pages .page{display: inline;}
+.pagination{width:100%;display:block;}
+.pagination .previous{float:left;}
+.pagination .next{float:right;}
+.pagination .pages{list-style-type:none;}
 
 
 #side{width:160px;position:fixed;left:50px;top:0;bottom:0;padding:30px 0;}
@@ -46,8 +46,13 @@ pre {
 #nav ul{margin:0;padding:15px 0;text-align:right;list-style-type: none;font-size:15px;}
 #nav li{border-right:5px solid #F5F5F5;padding-right:5px;font-size:20px;}
 #nav li:hover{border-right:5px solid #424242;}
+
 #header .title{font-size: 32px;line-height: 38px;font-weight: normal;margin: 0;color:#444;}
 #header .subtitle{font-size: 18px;line-height: 28px;font-weight: normal;margin: 0;color: #777;}
+#header .icons{float:right;}
+#header .icons ul{margin:0;padding:5px 0;list-style-type:none;}
+#header .icon{float:left;width:38px;height:38px;border-radius: 19px;box-shadow: 0 0 10px #DDD;}
+#header .icon img{width:38px;height:38px;border-radius: 19px;}
 
 #container {padding-left:220px;margin: auto;}
 #posts{background: #FFF;box-shadow: 0 0 15px #DDD;padding:30px;margin-top:43px;}
