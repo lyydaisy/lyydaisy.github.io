@@ -20,28 +20,29 @@
 
 	</head>
 	<body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>{{ site.name }}</h1>
-				<img id="about" src="/img/100.jpeg" height="75px" width="75px" /><br />	
-
-				<strong>Navigation</strong><br />
-				<a href="/jekyll">Home</a> <br />
-                <a href="/jekyll/categories.html">Categories</a><br />
-                <a href="http://weibo.com/u/2550326917" target="_blank">Weibo</a><br />
-				{% for i in site.urls %}
-					<a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
-				{% endfor %}
-				
-				{% if site.about %}
-				<div id="about">
-					<strong>about</strong><br />
-					{{ site.about }}
-				</div>
-				{% endif %}
+		<div id="side">
+			<div>
+				<img id="avator" src="/img/100.jpeg"/>
 			</div>
+
+			<div id="nav">
+				<ul>
+					<li><a href="/jekyll">Home</a></li>
+                				<li><a href="/jekyll/categories.html">Categories</a></li>
+                				<li><a href="http://weibo.com/u/2550326917" target="_blank">Weibo</a></li>
+                			</ul>
+			</div>
+		</div>
+
+		<div id="container">
+
+			<div id="header">
+				<div>
+					<h1 class="title">{{ site.name }}</h1>
+					<h2 class="subtitle">{{ site.about }}</h2>
+				</div>
+			</div>
+
 
 			<div class="col-sm-8 col-offset-1">
 				
