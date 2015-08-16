@@ -33,10 +33,10 @@ pre {
 	background: #333333;
 }
 
-.pagination{width:100%;display:block;}
-.pagination .previous{float:left;}
-.pagination .next{float:right;}
-.pagination .pages{list-style-type:none;}
+.pagination{width:100%;display:block;position:relative;}
+.pagination .previous{position:absolute;left:0;top:0;}
+.pagination .next{position:absolute;right:0;top:0;}
+.pagination .pages{list-style-type:none;width:500px;text-align:center;margin:0 auto;}
 
 
 #side{width:160px;position:fixed;left:50px;top:0;bottom:0;padding:30px 0;}
