@@ -8,15 +8,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- syntax highlighting CSS -->
-		<link rel="stylesheet" href="/css/syntax.css">
+		<link rel="stylesheet" href="{{site.staticurl}}/css/syntax.css">
 
 		<!-- Bootstrap core CSS -->
-		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{{site.staticurl}}/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="{{site.staticurl}}/css/main.css">
 
-		<script type="text/javascript" src="../js/prefixfree.min.js"></script>
+		<script type="text/javascript" src="{{site.staticurl}}/js/prefixfree.min.js"></script>
 
 	</head>
 	<body>
@@ -54,10 +54,10 @@
 		
 		</div>
 
-    <script src="http://lyydaisy.github.io/jekyll/js/jquery.min.js"></script>
-    <script src="http://lyydaisy.github.io/jekyll/js/bootstrap.min.js"></script>
+    <script src="{{site.url}}/js/jquery.min.js"></script>
+    <script src="{{site.url}}/js/bootstrap.min.js"></script>
     {%if page.title contains 'categories'%}
-    <script src="http://lyydaisy.github.io/jekyll/js/categories.js"></script>  
+    <script src="{{site.url}}/js/categories.js"></script>  
     {%endif%}
     </body>
 </html>

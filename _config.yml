@@ -14,5 +14,6 @@ excerpt_separator:  '<!-- more -->'
 
 # Details for the RSS feed generator
 url:            'http://lyydaisy.github.io/jekyll/'
+staitcurl:    'http://lyydaisy.github.io'
 author:         'lyydaisy'
 
