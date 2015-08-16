@@ -10,26 +10,6 @@ span.time,span.categories {
     font-size: 11px;
 }
 
-h1 {
-    font-weight: normal;
-    color: #696969;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-weight: normal;
-    margin-bottom: 5px;
-    color: #666666;
-    border-bottom: 1px solid #E6E6E6;
-}
-        
-h3 {
-    font-weight: normal;
-    margin-bottom: 5px;
-    color: #666666;
-    text-decoration: underline;
-}
-
 a, a:link, a:active {
     text-decoration: none;
     color: #8C8C8C;
@@ -70,4 +50,4 @@ pre {
 #header .subtitle{font-size: 18px;line-height: 28px;font-weight: normal;margin: 0;color: #777;}
 
 #container {padding-left:220px;margin: auto;}
-#posts{background: #FFF;box-shadow: 0 0 15px #DDD;}
+#posts{background: #FFF;box-shadow: 0 0 15px #DDD;padding:30px;margin-top:43px;}
