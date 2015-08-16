@@ -47,11 +47,12 @@ pre {
 #nav li{border-right:5px solid #F5F5F5;padding-right:5px;font-size:20px;}
 #nav li:hover{border-right:5px solid #424242;}
 
+#header{position:relative;}
 #header .title{font-size: 32px;line-height: 38px;font-weight: normal;margin: 0;color:#444;}
 #header .subtitle{font-size: 18px;line-height: 28px;font-weight: normal;margin: 0;color: #777;}
-#header .icons{float:right;}
+#header .icons{position:absolute;right:0;top:0;}
 #header .icons ul{margin:0;padding:5px 0;list-style-type:none;}
-#header .icon{float:left;width:38px;height:38px;border-radius: 19px;box-shadow: 0 0 10px #DDD;}
+#header .icon{float:left;width:38px;height:38px;border-radius: 19px;box-shadow: 0 0 10px #DDD;text-align:center;line-height:38px;}
 #header .icon img{width:38px;height:38px;border-radius: 19px;}
 
 #container {padding-left:220px;margin: auto;}
