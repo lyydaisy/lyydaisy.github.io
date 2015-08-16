@@ -10,6 +10,7 @@ paginate: 20
 paginate_path: "/jekyll/page:num"
 baseurl: /jekyll/
 domain_name: 'http://lyydaisy.github.io'
+excerpt_separator:  '<!-- more -->'
 
 # Details for the RSS feed generator
 url:            'http://lyydaisy.github.io/jekyll/'
