@@ -46,7 +46,7 @@
     100%{margin-top:0px;}
 }
 *{margin:0;padding:0;}
-body{background:rgb(186,217,229);}
+body{background:url(../img/b.jpg) repeat;}
 a,a:hover{text-decoration:none;color:black;}
 .sycp{position:fixed;transform:scale(1.2,1.2);}
 .sycp1{width:172px;height:173px;background-image:url(../img/sycp1.png);background-repeat: no-repeat;left:20%;top:20%;animation:sycRotate 20s infinite;}
@@ -74,7 +74,7 @@ a,a:hover{text-decoration:none;color:black;}
 .crystalHide{margin-top:-350px;}
 .crystalText{position:absolute;left:35px;top:210px;}
 
-.daisy{display:none;position:fixed;left:0;bottom:0;height:200px;width:100%;font-size:160px;line-height:200px;text-align:center;font-family:"BeauRivageOne";
+.daisy{display:none;position:fixed;left:0;bottom:0;height:200px;width:100%;font-size:160px;line-height:200px;text-align:center;
 text-shadow: 1px -1px rgba(160, 160, 160,1.0),2px -2px rgba(160, 160, 160,1.0),3px -3px rgba(160, 160, 160,1.0),4px -4px rgba(160, 160, 160,1.0),5px -5px rgba(160, 160, 160,1.0),6px -6px rgba(160, 160, 160,1.0);
 }
 
