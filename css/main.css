@@ -58,4 +58,4 @@ pre {
 
 #container {padding-left:220px;margin: auto;}
 #posts{background: #FFF;box-shadow: 0 0 15px #DDD;padding:30px;margin-top:43px;}
-#posts h2{margin:0;padding:0;}
+#posts h1,#posts h2{margin:0;padding:0;}
