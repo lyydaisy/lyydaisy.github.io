@@ -65,7 +65,7 @@ pre {
 .post .posttitle .category{font-size:16px;line-height:32px;}
 .post .posttitle .arrow{font-size:16px;line-height:32px;margin:0 5px;}
 .post .posttitle .maintitle{font-size:24px;line-height:32px;}
-.post .posttitle .maintitle:hover{color:#333;}
+.post .posttitle .maintitle:hover{color:#333;display:inline;vertical-align:middle;}
 .post .posttitle .date{position:absolute;right:0;top:0;width:50px;height:50px;text-align: center;border:1px dashed #aaa;border-top:none;}
 .post .posttitle .date span{display:inline-block;margin-top:5px;}
 .post .article{margin-top:20px;}

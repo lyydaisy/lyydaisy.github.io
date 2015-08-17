@@ -6,7 +6,7 @@ title: home
 {% for post in paginator.posts %}
 <div class="post">
     <div class="posttitle">
-        <a href="{{ post.url }}"><span class="category">{{ post.categories }}</span><span class="arrow">></span><span class="maintitle">{{ post.title }}</span></a>
+        <a href="{{ post.url }}"><span class="category">{{ post.categories }}</span><span class="arrow">></span><h2 class="maintitle">{{ post.title }}</h2></a>
         <div class="date"><span>{{ post.date | date_to_string }}</span></div>
     </div>
     <div class="article">{{ post.excerpt }}</div>
