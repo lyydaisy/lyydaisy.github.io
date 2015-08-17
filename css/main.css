@@ -60,10 +60,10 @@ pre {
 #posts{background: #FFF;box-shadow: 0 0 15px #DDD;padding:30px;margin-top:43px;}
 #posts h1,#posts h2{margin:0;padding:0;}
 
-.post .posttitle{position:relative;}
-.post .posttile a{color:#444;}
-.post .posttitle a:hover{color:#333;}
+.post .posttitle{position:relative;padding:10px 0;border-top:1px dashed #aaa;border-bottom:1px dashed #aaa;}
+.post .posttile a{color:#444;cursor:pointer;}
 .post .posttitle .category{font-size:16px;line-height:32px;}
 .post .posttitle .arrow{font-size:16px;line-height:32px;margin:0 5px;}
 .post .posttitle .maintitle{font-size:24px;line-height:32px;}
-.post .posttitle .date{position:absolute;right:0;top:0;}
+.post .posttitle .maintitle:hover{color:#333;}
+.post .posttitle .date{position:absolute;right:0;top:0;width:50px;height:50px;text-align: center;border:1px dashed #aaa;border-top:none;}
