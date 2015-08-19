@@ -1,13 +1,20 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<span class="time">{{ page.date | date_to_string }} by lyydaisy</span>
-<span class="categories">, categories:{{ page.categories}}</span>
-<div class="content">
-	<div class="post">{{ content }}</div>
-    <div>
-        <!-- 多说评论框 start -->
+<div class="post">
+    <div class="posttitle">
+        <a href="javascript:;"><span class="category">{{ page.categories }}</span><span class="arrow">></span><h2 class="maintitle">{{ page.title }}</h2></a>
+		<div class="tags">
+			<span class="written">By lyydaisy</span>
+			{% for tag in page.tags%}
+			<span class="tag"><a href="/jekyll/tags.html?tag={{tag}}">{{tag}}</a></span>
+			{% endfor%}
+		</div>
+        <div class="date"><span>{{ page.date | date_to_string }}</span></div>
+    </div>
+    <div class="article">{{ content }}</div>
+
+<!-- 多说评论框 start -->
 	<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
@@ -23,5 +30,6 @@ var duoshuoQuery = {short_name:"lyydaisygithub"};
 	})();
 	</script>
 <!-- 多说公共JS代码 end -->
-    </div>
+
 </div>
+
