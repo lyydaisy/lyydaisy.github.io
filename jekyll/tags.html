@@ -3,15 +3,16 @@ layout: default
 title: By tag 
 ---
 {% for tag in site.tags %}
-	<div tag="{{tag|first}}" class="tag">
+	<div tag="{{tag|first}}" class="sortItem">
 		<h2 style="padding-bottom:20px;">Tag:{{tag|first}}</h2>
 		{% for post in tag[1] %}
 		<div class="post">
 			<div class="posttitle">
-				<a href="{{ post.url }}"><h2 class="maintitle">{{ post.title }}</h2></a>
+				<a href="{{ post.url }}"><span class="category">{{ post.categories }}</span><span class="arrow">></span><h2 class="maintitle">{{ post.title }}</h2></a>
 				<div class="date"><span>{{ post.date | date_to_string }}</span></div>
 			</div>
 			<div class="article">{{ post.excerpt }}</div>
+			<div class="readmore">Read More →<div>
 		</div>
 		{% endfor %}
 	</div>
