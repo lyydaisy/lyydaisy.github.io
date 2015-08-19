@@ -26,13 +26,14 @@
 			</div>
 
 			<div id="nav">
+				<div class="navTab">Navigation</div>
 				<ul>
 					<li><a href="/jekyll">Home</a></li>
-                				<li><a href="/jekyll/categories.html">Categories</a></li>
-                				<li><a href="http://weibo.com/u/2550326917" target="_blank">Weibo</a></li>
+                	<li><a href="http://weibo.com/u/2550326917" target="_blank">Weibo</a></li>
                 			</ul>
 			</div>
 			<div id="categories">
+				<div class="navTab">Categories</div>
 				<ul>
 					{% for category in site.categories %}
 					<li><a href="/jekyll/categories.html?category={{category|first}}">{{category | first}}</a></li>
