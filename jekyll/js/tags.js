@@ -7,6 +7,7 @@ function getParameterByName(name) {
 
 var tag = getParameterByName('tag');
 $("div[tag]").each(function(index,div){
+	div = $(div);
 	if(div.attr('tag')==tag){
 		div.show();
 	}else{
