@@ -13,7 +13,7 @@ layout: default
         <div class="date"><span>{{ page.date | date_to_string }}</span></div>
     </div>
     <div class="article">{{ content }}</div>
-
+	<div class="copyright">如需转载，烦请注明原文出处：<a href="{{page.url}}">{{page.url}}</a></div>
 <!-- 多说评论框 start -->
 	<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
 <!-- 多说评论框 end -->
