@@ -6,7 +6,7 @@ function getParameterByName(name) {
 }
 
 var tag = getParameterByName('tag');
-$("div[tag]").each(function(div){
+$("div[tag]").each(function(index,div){
 	if(div.attr('tag')==tag){
 		div.show();
 	}else{
