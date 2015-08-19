@@ -35,7 +35,7 @@
 			<div>
 				<ul>
 					{% for category in site.categories %}
-					<li>{{category | first}}</li>
+					<li><a href="/jekyll/categories.html?category={{category|first}}">{{category | first}}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -77,10 +77,10 @@
 
     <script src="{{site.url}}/js/jquery.min.js"></script>
     <script src="{{site.url}}/js/bootstrap.min.js"></script>
-    {%if page.title contains 'categories'%}
+    {%if page.title contains 'category'%}
     <script src="{{site.url}}/js/categories.js"></script>  
     {%endif%}
-	{%if page.title contains 'tags'%}
+	{%if page.title contains 'tag'%}
     <script src="{{site.url}}/js/tags.js"></script>  
     {%endif%}
     </body>
