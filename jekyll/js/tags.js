@@ -6,11 +6,16 @@ function getParameterByName(name) {
 }
 
 var tag = getParameterByName('tag');
+var hasResult = false;
 $("div[tag]").each(function(index,div){
 	div = $(div);
 	if(div.attr('tag')==tag){
 		div.show();
+		hasResult = true;
 	}else{
 		div.remove();
 	}
 });
+if(!hasResult){
+	$("#posts").html('<div class="sortItem"><h2>Invalid Tag.</h2></div>');
+}

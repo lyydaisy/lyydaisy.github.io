@@ -6,12 +6,16 @@ function getParameterByName(name) {
 }
 
 var category = getParameterByName('category');
+var hasResult = false;
 $("div[tag]").each(function(index,div){
 	div = $(div);
 	if(div.attr('tag')==category){
 		div.show();
+		hasResult = true;
 	}else{
 		div.remove();
 	}
 });
-
+if(!hasResult){
+	$("#posts").html('<div class="sortItem"><h2>Invalid Category.</h2></div>');
+}

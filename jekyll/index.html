@@ -7,6 +7,9 @@ title: home
 <div class="post">
     <div class="posttitle">
         <a href="{{ post.url }}"><span class="category">{{ post.categories }}</span><span class="arrow">></span><h2 class="maintitle">{{ post.title }}</h2></a>
+		<div class="tags">
+			{{post.tags}}
+		</div>
         <div class="date"><span>{{ post.date | date_to_string }}</span></div>
     </div>
     <div class="article">{{ post.excerpt }}</div>
