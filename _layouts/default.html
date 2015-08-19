@@ -74,10 +74,11 @@
 			</div>				
 
 			<div id="tags">
-				<h2 style="display:inline;">Tags:</h2>
+				<h3 style="display:inline;">Tags:</h3>
 				<div style="display:inline-block;">
 				{% for tag in site.tags %}
-				<span><a href="/jekyll/tags.html?tag={{tag|first}}">{{tag | first}}<sup>{{tag | last | size}}</sup></a></span>
+					<span><a href="/jekyll/tags.html?tag={{tag|first}}">{{tag | first}}</a></span>
+					<sup>({{tag | last | size}})</sup>
 				{% endfor %}
 				</div>
 			</div>
