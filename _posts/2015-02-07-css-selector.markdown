@@ -3,7 +3,7 @@ layout: post
 title:  "CSS选择器"
 date:   2015-02-07 15:18:23 
 categories: css
-tags: css,css选择器
+tags: [css,css选择器]
 ---
 顾名思义，css选择器是用来选择元素的，通过css选择器，可以选择任何形式任何种类的元素。
 
