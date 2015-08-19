@@ -65,7 +65,7 @@ pre {
 .sortItem{display:none;}
 
 .post{padding-bottom:40px;}
-.post .posttitle{position:relative;padding:20px 0;border-top:1px dashed #aaa;border-bottom:1px dashed #aaa;}
+.post .posttitle{position:relative;padding:10px 0;border-top:1px dashed #aaa;border-bottom:1px dashed #aaa;}
 .post .posttile a{color:#444;cursor:pointer;}
 .post .posttitle .category{font-size:20px;line-height:32px;display:inline;vertical-align:middle;}
 .post .posttitle .arrow{font-size:20px;line-height:32px;margin:0 5px;display:inline;vertical-align:middle;}
@@ -80,3 +80,5 @@ pre {
 .post .readmore:hover,.post .tag:hover{background:#aaa;}
 .post .readmore a,.post .tag a{color:#000;}
 .post .readmore a:hover,.post .tag a:hover{color:#fff;}
+
+footer{position:absolute:right:0;bottom:10px;font-size:14px;color:#ddd;text-align:right;}

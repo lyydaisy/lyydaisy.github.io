@@ -17,5 +17,5 @@ $("div[tag]").each(function(index,div){
 	}
 });
 if(!hasResult){
-	$("#posts").html('<div class="sortItem"><h2>Invalid Category.</h2></div>');
+	$("#posts").html('<div><h2>Invalid Category.</h2></div>');
 }
