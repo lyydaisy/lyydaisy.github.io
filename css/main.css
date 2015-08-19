@@ -41,9 +41,9 @@ pre {
 
 
 #side{width:160px;position:fixed;left:50px;top:0;bottom:0;padding:30px 0;}
-#avator{text-align: right;}
+#avator{text-align: right;margin-bottom:20px;}
 #avator img{width:112px;height:112px;border-radius:56px;}
-#nav,#categories{border-top:1px solid #ddd;margin-top:20px;}
+#nav,#categories{border-top:1px solid #ddd;}
 #categories ul,#nav ul{margin:0;padding:15px 0;text-align:right;list-style-type: none;font-size:15px;}
 #categories li,#nav li{border-right:5px solid #F5F5F5;padding-right:5px;font-size:20px;}
 #categories li:hover,#nav li:hover{border-right:5px solid #424242;}
@@ -62,7 +62,7 @@ pre {
 
 .sortItem{display:none;}
 
-.post{padding-bottom:20px;}
+.post{padding-bottom:40px;}
 .post .posttitle{position:relative;padding:20px 0;border-top:1px dashed #aaa;border-bottom:1px dashed #aaa;}
 .post .posttile a{color:#444;cursor:pointer;}
 .post .posttitle .category{font-size:20px;line-height:32px;display:inline;vertical-align:middle;}
@@ -72,4 +72,5 @@ pre {
 .post .posttitle .date{position:absolute;right:0;top:0;width:50px;height:50px;text-align: center;border:1px dashed #aaa;border-top:none;}
 .post .posttitle .date span{display:inline-block;margin-top:5px;}
 .post .article{margin-top:20px;}
-.post .readmore{display: inline-block;padding: 0 5px;line-height: 22px;height: 22px;background: #EEE;color: #000;font-size:14px;}
+.post .readmore{display: inline-block;padding: 0 5px;line-height: 22px;height: 22px;background: #EEE;color: #000;font-size:14px;cursor:pointer;}
+.post .readmore:hover{background:#aaa;}

@@ -10,7 +10,7 @@ title: home
         <div class="date"><span>{{ post.date | date_to_string }}</span></div>
     </div>
     <div class="article">{{ post.excerpt }}</div>
-	<div class="readmore">Read More →</div>
+	<div class="readmore"><a href="{{post.url}}">Read More →</a></div>
 </div>
 {% endfor %}
 
