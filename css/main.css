@@ -74,5 +74,9 @@ pre {
 .post .posttitle .date{position:absolute;right:0;top:0;width:50px;height:50px;text-align: center;border:1px dashed #aaa;border-top:none;}
 .post .posttitle .date span{display:inline-block;margin-top:5px;}
 .post .article{margin-top:20px;}
-.post .readmore{display: inline-block;padding: 0 5px;line-height: 22px;height: 22px;background: #EEE;color: #000;font-size:14px;cursor:pointer;}
-.post .readmore:hover{background:#aaa;}
+.post .written{display: inline-block;padding: 0 5px;line-height: 22px;height: 22px;background: #aaa;font-size:14px;color:#fff;}
+.post .tag{margin-left:5px;}
+.post .readmore,.post .tag{display: inline-block;padding: 0 5px;line-height: 22px;height: 22px;background: #EEE;font-size:14px;cursor:pointer;}
+.post .readmore:hover,.post .tag:hover{background:#aaa;}
+.post .readmore a,.post .tag a{color:#000;}
+.post .readmore a:hover,.post .tag a:hover{color:#fff;}

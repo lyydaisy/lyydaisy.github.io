@@ -8,7 +8,10 @@ title: home
     <div class="posttitle">
         <a href="{{ post.url }}"><span class="category">{{ post.categories }}</span><span class="arrow">></span><h2 class="maintitle">{{ post.title }}</h2></a>
 		<div class="tags">
-			{{post.tags}}
+			<span class="written">By lyydaisy</span>
+			{% for tag in post.tags%}
+			<span class="tag">{{tag}}</span>
+			{% endfor%}
 		</div>
         <div class="date"><span>{{ post.date | date_to_string }}</span></div>
     </div>
