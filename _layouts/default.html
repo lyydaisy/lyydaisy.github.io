@@ -42,7 +42,7 @@
 			<div>
 				<ul>
 					{% for tag in site.tags %}
-					<li>{{tag | first}}({{tag | last | size}})</li>
+					<li><a href="/jekyll/tags.html?tag={{tag|first}}">{{tag | first}}({{tag | last | size}})</li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -79,6 +79,9 @@
     <script src="{{site.url}}/js/bootstrap.min.js"></script>
     {%if page.title contains 'categories'%}
     <script src="{{site.url}}/js/categories.js"></script>  
+    {%endif%}
+	{%if page.title contains 'tags'%}
+    <script src="{{site.url}}/js/tags.js"></script>  
     {%endif%}
     </body>
 </html>
