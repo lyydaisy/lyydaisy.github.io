@@ -7,7 +7,7 @@ tags: [css,css选择器]
 ---
 顾名思义，css选择器是用来选择元素的，通过css选择器，可以选择任何形式任何种类的元素。
 
-##伪类和伪元素
+###伪类和伪元素
 伪类一般以一个冒号开始：
 {%highlight css%}
 :link
@@ -47,7 +47,7 @@ css3中增加了很多新的伪类：
 {%endhighlight%}
 <!-- more -->
 
-##通用选择
+###通用选择
 星号（＊）称为通用选择器，可以经常在css reset看到这种写法，作用是选择文档中的所有元素并设置样式：
 {%highlight css%}
 *{margin:0;padding:0;}
@@ -58,14 +58,14 @@ css3中增加了很多新的伪类：
 div *{border:1px solid black;}
 {%endhighlight%}
 
-##ID和类
+###ID和类
 ID选择器以井号（＃）开头，类选择器以英文句号（.）开头：
 {%highlight css%}
 ＃header{border:1px solid black;}
 .navlinks{text-decoration:none;}
 {%endhighlight%}
 
-##属性选择
+###属性选择
 可以通过元素已有的属性选择元素，或者基于元素属性值的某个方面进行选择。
 根据特定的href值来选择a：
 {%highlight css%}
@@ -83,7 +83,7 @@ a[href="http://lyydaisy.github.io"]{text-decoration:none;}
 [attribute*=value]/*匹配属性值中包含指定值的每个元素。
 {%endhighlight%}
 
-##后代选择
+###后代选择
 所有后代选择器，用空格隔开：
 {%highlight css%}
 div a{text-decoration:none;}/*选中div中所有的a*/
@@ -94,7 +94,7 @@ div a{text-decoration:none;}/*选中div中所有的a*/
 div > a{text-decoration:none;}/*选中div的直接子元素a*/
 {%endhighlight%}
 
-##同胞选择
+###同胞选择
 同胞选择器使用“＋”或者“~”：
 {%highlight css%}
 h1 + p {margin-top:50px;}/*紧邻同胞，选择紧跟在h1后面的p*/
