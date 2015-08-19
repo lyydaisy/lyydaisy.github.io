@@ -70,7 +70,7 @@ a,a:hover{text-decoration:none;color:black;}
 .crystal{position:fixed;left:50%;margin-left:-100px;width:200px;height:350px;cursor:pointer;background:url(../img/crystal.png) left bottom no-repeat;background-size:100%;transform-origin: 50% -50px;}
 .crystalrope{width:40px;height:230px;margin-left:auto;margin-right:auto;margin-top:-80px;background:url(../img/crystalrope.png) no-repeat;background-size:100%;}
 .crystalHide{margin-top:-350px;}
-.crystalText{position:absolute;left:35px;top:210px;}
+.crystalText{position:absolute;left:25px;top:210px;}
 
 .daisy{display:none;position:fixed;left:0;bottom:0;height:200px;width:100%;font-size:160px;line-height:200px;text-align:center;font-style:italic;
 text-shadow: 1px -1px rgba(160, 160, 160,1.0),2px -2px rgba(160, 160, 160,1.0),3px -3px rgba(160, 160, 160,1.0),4px -4px rgba(160, 160, 160,1.0),5px -5px rgba(160, 160, 160,1.0),6px -6px rgba(160, 160, 160,1.0);
