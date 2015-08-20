@@ -2,12 +2,12 @@ var side = $("#side");
 var minHeight = $(window).height();
 side.css("minHeight",minHeight+"px");
 var sideLeft = side.offset().left;
-var top = 0;
+var ttop = 0;
 var timer = null;
 function setPosition(){
 	var scrollTop = $(window).scrollTop();
-	if(scrollTop!=top){
-		top = scrollTop;
+	if(scrollTop!=ttop){
+		ttop = scrollTop;
 		if(timer){
 			clearTimeout(timer);
 		}
