@@ -41,7 +41,7 @@ pre {
 .pagination .pages{list-style-type:none;text-align:center;margin:0;padding:0;display:inline-block;}
 .pagination span.current-page{background-color:#eee;padding:5px;}
 
-#side{width:160px;position:fixed;left:0;top:0;bottom:0;padding:30px 0;}
+#side{width:160px;position:absolute;left:0;top:0;bottom:0;padding:30px 0;}
 #avator{text-align: right;margin-bottom:20px;}
 #avator img{width:112px;height:112px;border-radius:56px;}
 #nav,#categories{border-top:1px solid #ddd;position:relative;}
