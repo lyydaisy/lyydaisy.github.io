@@ -1,4 +1,6 @@
 var side = $("#side");
+var minHeight = $(window).height();
+side.css("minHeight",minHeight+"px");
 var sideLeft = side.offset().left;
 function setPosition(){
 	var scrollTop = $(window).scrollTop();
