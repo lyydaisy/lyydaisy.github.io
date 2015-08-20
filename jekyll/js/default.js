@@ -11,7 +11,7 @@ function setPosition(){
 		if(timer){
 			clearTimeout(timer);
 		}
-		setTimeout(function(){
+		timer = setTimeout(function(){
 			setPosition();
 		},100);
 		return;
