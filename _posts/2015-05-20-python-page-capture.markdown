@@ -9,7 +9,7 @@ tags: ["python","python数据抓取"]
 
 ###准备工作
 首先，从淘宝基金的详情页，我们可以拿到了获取数据的ajax链接：
-{%highlight html%}
+{%highlight python%}
 http://licai.taobao.com/json/show_buyer_list.html?bid_page=0&item_id=88888888&seller_id=88888888&page_size=10
 {%endhighlight%}
 很容易看出来参数的意思，bid_page是第几页，page_size是每页的数据条数，item_id是基金的id，seller_id应该是店家的id。<!-- more -->
