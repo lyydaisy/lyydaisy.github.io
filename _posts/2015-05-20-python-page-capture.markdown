@@ -14,6 +14,7 @@ http://licai.taobao.com/json/show_buyer_list.html?bid_page=0&item_id=88888888&se
 {%endhighlight%}
 很容易看出来参数的意思，bid_page是第几页，page_size是每页的数据条数，item_id是基金的id，seller_id应该是店家的id。
 <!-- more -->
+
 需要通过这几个参数才能获取数据，所以我们把感兴趣的几个基金的参数都找出来，并放在数组中，每一组参数放在字典中：
 {%highlight python%}
 items = [
@@ -33,12 +34,12 @@ items = [
 {%highlight python%}
 req = urllib2.Request(url=url,headers=headers)
 {%endhighlight%}
-####urlopen
+####urlopen:
 有了request对象，我们就可以使用urlopen方法来打开一个socket连接，参数中还可以设置超时时间：
 {%highlight python%}
 socket = urllib2.urlopen(req,timeout=5)
 {%endhighlight%}
-####read
+####read:
 这个其实是socket的方法，用它就能读到返回的数据啦，当然用完别忘了把socket关了：
 {%highlight python%}
 content = socket.read()  
