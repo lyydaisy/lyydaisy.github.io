@@ -18,6 +18,7 @@ tags: ["css","css选择器"]
 :first-child
 :lang()
 {%endhighlight%}
+<!-- more -->
 
 css3中增加了很多新的伪类：
 {%highlight css%}
@@ -45,7 +46,6 @@ css3中增加了很多新的伪类：
 ::before
 ::after
 {%endhighlight%}
-<!-- more -->
 
 ###通用选择
 星号（＊）称为通用选择器，可以经常在css reset看到这种写法，作用是选择文档中的所有元素并设置样式：
