@@ -34,7 +34,7 @@ req = urllib2.Request(url=url,headers=headers)
 {%endhighlight%}
 ####urlopen
 有了request对象，我们就可以使用urlopen方法来打开一个socket连接，参数中还可以设置超时时间：
-{%hightlight python%}
+{%highlight python%}
 socket = urllib2.urlopen(req,timeout=5)
 {%endhighlight%}
 ####read
