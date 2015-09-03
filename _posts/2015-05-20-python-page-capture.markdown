@@ -12,7 +12,8 @@ tags: ["python","python数据抓取"]
 {%highlight python%}
 http://licai.taobao.com/json/show_buyer_list.html?bid_page=0&item_id=88888888&seller_id=88888888&page_size=10
 {%endhighlight%}
-很容易看出来参数的意思，bid_page是第几页，page_size是每页的数据条数，item_id是基金的id，seller_id应该是店家的id。<!-- more -->
+很容易看出来参数的意思，bid_page是第几页，page_size是每页的数据条数，item_id是基金的id，seller_id应该是店家的id。
+<!-- more -->
 需要通过这几个参数才能获取数据，所以我们把感兴趣的几个基金的参数都找出来，并放在数组中，每一组参数放在字典中：
 {%highlight python%}
 items = [
