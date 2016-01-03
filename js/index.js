@@ -23,10 +23,12 @@ $(".crystal,.crystalText").bind("click",function(){
 $(".ballText,.crystalText").each(function(index,ele){
     $(ele).bind("mouseenter",function(event){
         var that = $(this).parent();
-        that.removeClass("ballRotate");//.addClass("ballHover");
+        if(!that.hasClass('ballUp')){
+            that.removeClass("ballRotate");//.addClass("ballHover");
+        }
     }).bind("mouseleave",function(event){
         var that = $(this).parent();
-        if(!that.hasClass("ballHide")&&!that.hasClass("crystalHide")){
+        if(!that.hasClass("ballHide")&&!that.hasClass("crystalHide")&&!that.hasClass('ballUp')){
             //that.removeClass("ballHover").addClass("ballHoverOut");
             //setTimeout(function(){
                 //that.removeClass("ballHoverOut");
