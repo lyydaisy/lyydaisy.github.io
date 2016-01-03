@@ -48,12 +48,12 @@
 
 // webkit
 @-webkit-keyframes sycRotate{
-    from{transform:rotate(0deg);}
-    to{transform:rotate(360deg);}
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
 }
 @-webkit-keyframes sycFade{
-    from{transform:rotate(0deg) scale(1);}
-    to{transform:rotate(360deg) scale(0);}
+    from{-webkit-transform:rotate(0deg) scale(1);}
+    to{-webkit-transform:rotate(360deg) scale(0);}
 }
 @-webkit-keyframes ballFall{
     0%{margin-top:-320px;}
@@ -67,12 +67,12 @@
     100%{margin-top:-350px;}
 }
 @-webkit-keyframes ballRotateStart{
-    0%{transform:rotate(0deg);}
-    100%{transform:rotate(5deg);}
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(5deg);}
 }
 @-webkit-keyframes ballRotate{
-    0%{transform:rotate(5deg);}
-    100%{transform:rotate(-5deg);}
+    0%{-webkit-transform:rotate(5deg);}
+    100%{-webkit-transform:rotate(-5deg);}
 }
 @-webkit-keyframes ballHover{
     0%{margin-top:0px;}
@@ -85,12 +85,12 @@
 
 // moz
 @-moz-keyframes sycRotate{
-    from{transform:rotate(0deg);}
-    to{transform:rotate(360deg);}
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
 }
 @-moz-keyframes sycFade{
-    from{transform:rotate(0deg) scale(1);}
-    to{transform:rotate(360deg) scale(0);}
+    from{-moz-transform:rotate(0deg) scale(1);}
+    to{-moz-transform:rotate(360deg) scale(0);}
 }
 @-moz-keyframes ballFall{
     0%{margin-top:-320px;}
@@ -104,12 +104,12 @@
     100%{margin-top:-350px;}
 }
 @-moz-keyframes ballRotateStart{
-    0%{transform:rotate(0deg);}
-    100%{transform:rotate(5deg);}
+    0%{-moz-transform:rotate(0deg);}
+    100%{-moz-transform:rotate(5deg);}
 }
 @-moz-keyframes ballRotate{
-    0%{transform:rotate(5deg);}
-    100%{transform:rotate(-5deg);}
+    0%{-moz-transform:rotate(5deg);}
+    100%{-moz-transform:rotate(-5deg);}
 }
 @-moz-keyframes ballHover{
     0%{margin-top:0px;}
@@ -126,6 +126,8 @@ a,a:hover{text-decoration:none;color:black;}
 .sycp{
     position:fixed;
     transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -moz-transform:scale(1.2,1.2);
 }
 .sycp1{
     width:172px;
@@ -135,6 +137,7 @@ a,a:hover{text-decoration:none;color:black;}
     left:20%;
     top:20%;
     animation:sycRotate 20s infinite;
+    -webkit-animation:sycRotate 20s infinite;
 }
 .sycp2{
     width:181px;
@@ -144,6 +147,7 @@ a,a:hover{text-decoration:none;color:black;}
     left:70%;
     top:60%;
     animation:sycRotate 15s infinite;
+    -webkit-animation:sycRotate 15s infinite;
 }
 .sycp3{
     width:106px;
@@ -153,6 +157,7 @@ a,a:hover{text-decoration:none;color:black;}
     left:60%;
     top:30%;
     animation:sycRotate 5s infinite;
+    -webkit-animation:sycRotate 5s infinite;
 }
 .sycp4{
     width:124px;
@@ -162,10 +167,14 @@ a,a:hover{text-decoration:none;color:black;}
     left:30%;
     top:50%;
     animation:sycRotate 10s infinite;
+    -webkit-animation:sycRotate 10s infinite;
 }
 .sycpfade{
     animation:sycFade 2s;
+    -webkit-animation:sycFade 2s;
     transform:scale(0,0);
+    -webkit-transform:scale(0,0);
+    -moz-transform:scale(0,0);
 }
 .lyy{
     width:150px;
@@ -186,6 +195,8 @@ a,a:hover{text-decoration:none;color:black;}
 }
 .lyy:hover{
     transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -moz-transform:scale(1.2,1.2);
     box-shadow:0 0 10px #000;
 }
 .sycpfade:hover{transform:scale(0,0);}
@@ -275,6 +286,8 @@ a,a:hover{text-decoration:none;color:black;}
     background:url(../img/crystal.png) left bottom no-repeat;
     background-size:100%;
     transform-origin: 50% -50px;
+    -webkit-transform-origin: 50% -50px;
+    -moz-transform-origin: 50% -50px;
 }
 .crystalrope{
     width:40px;
@@ -338,7 +351,11 @@ a,a:hover{text-decoration:none;color:black;}
 }
 
 @media only screen and (max-width: 640px){
-    .sycp{transform:scale(0.5,0.5);}
+    .sycp{
+        transform:scale(0.5,0.5);
+        -webkit-transform:scale(0.5,0.5);
+        -moz-transform:scale(0.5,0.5);
+    }
     .sycp1{left:20px;top:20px;}
     .sycp2{left:200px;}
     .sycp3{right:30px;top:100px;}
