@@ -10,7 +10,7 @@ $(".lyy").bind("click",function(){
                 $(".ball,.crystal").removeClass('ballRotateStart').addClass("ballRotate");
             },500);
         },1000);
-    },1000);
+    },800);
 });
 $(".crystal").bind("click",function(){
     $(".ball,.crystal").removeClass("ballHover ballFall ballRotateStart ballRotate").addClass("ballUp");
@@ -18,14 +18,14 @@ $(".crystal").bind("click",function(){
     setTimeout(function(){
         $(".ball,.crystal").addClass("ballHide crystalHide");
         $(".sycp,.lyy").hide().removeClass("sycpfade").fadeIn();
-    },1000);
+    },800);
 });
-$(".ball,.crystal").each(function(index,ele){
+$(".ballText,.crystalText").each(function(index,ele){
     $(ele).bind("mouseenter",function(event){
-        var that = $(this);
+        var that = $(this).parent();
         that.removeClass("ballRotate");//.addClass("ballHover");
     }).bind("mouseleave",function(event){
-        var that = $(this);
+        var that = $(this).parent();
         if(!that.hasClass("ballHide")&&!that.hasClass("crystalHide")){
             //that.removeClass("ballHover").addClass("ballHoverOut");
             //setTimeout(function(){
