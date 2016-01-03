@@ -34,7 +34,7 @@
     100%{transform:rotate(5deg);}
 }
 @keyframes ballRotate{
-    0%{transform:rotate(10deg);}
+    0%{transform:rotate(5deg);}
     100%{transform:rotate(-5deg);}
 }
 @keyframes ballHover{
@@ -136,6 +136,8 @@ a,a:hover{text-decoration:none;color:black;}
     border-radius:60px;
     position:fixed;
     transform-origin: 50% -150px;
+    -webkit-transform-origin: 50% -150px;
+    -moz-transform-origin: 50% -150px;
     cursor:pointer;
 } 
 .ball:before{

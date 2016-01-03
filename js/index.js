@@ -7,7 +7,7 @@ $(".lyy").bind("click",function(){
             $(".ball").removeClass("ballFall ballHide").addClass("ballRotateStart");
             $(".crystal").removeClass("ballFall crystalHide").addClass("ballRotateStart");
             setTimeout(function(){
-                $(".ball,.crystal").addClass("ballRotate");
+                $(".ball,.crystal").removeClass('ballRotateStart').addClass("ballRotate");
             },500);
         },1000);  
     },500);
@@ -37,7 +37,7 @@ $(".ballText,.crystal").each(function(index,ele){
             setTimeout(function(){
                 that.removeClass("ballHoverOut").addClass("ballRotateStart");
                 setTimeout(function(){
-                    that.addClass("ballRotate");
+                    that.removeClass('ballRotateStart').addClass("ballRotate");
                 },500);
             },1000);
         }
