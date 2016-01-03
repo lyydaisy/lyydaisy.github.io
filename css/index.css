@@ -336,8 +336,8 @@ a,a:hover{text-decoration:none;color:black;}
     -webkit-animation:ballRotateStart 0.5s;
 }
 .ballRotate{
-    animation:ballRotate 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0s infinite alternate;
-    -webkit-animation:ballRotate 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0s infinite alternate;
+    animation:ballRotate 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite alternate;
+    -webkit-animation:ballRotate 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite alternate;
 }
 .ballHover{
     animation:ballHover 0.5s;
