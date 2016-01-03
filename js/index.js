@@ -26,7 +26,7 @@ $(".ballText,.crystal").each(function(index,ele){
         if(that.hasClass("ballText")){
             that = that.parent();
         }
-        that.removeClass("ballLeft ballRotate ballRotateStart").addClass("ballHover");
+        that.removeClass("ballRotate ballRotateStart").addClass("ballHover");
     }).bind("mouseleave",function(event){
         var that = $(this);
         if(that.hasClass("ballText")){
