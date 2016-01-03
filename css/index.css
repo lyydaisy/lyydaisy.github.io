@@ -46,6 +46,43 @@
     100%{margin-top:0px;}
 }
 
+// webkit
+@-webkit-keyframes sycRotate{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+@-webkit-keyframes sycFade{
+    from{transform:rotate(0deg) scale(1);}
+    to{transform:rotate(360deg) scale(0);}
+}
+@-webkit-keyframes ballFall{
+    0%{margin-top:-320px;}
+    60%{margin-top:5px;}
+    80%{margin-top:-5px;}
+    100%{margin-top:0px;}
+}
+@-webkit-keyframes ballUp{
+    0%{margin-top:0px;}
+    20%{margin-top:50px;}
+    100%{margin-top:-350px;}
+}
+@-webkit-keyframes ballRotateStart{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(5deg);}
+}
+@-webkit-keyframes ballRotate{
+    0%{transform:rotate(5deg);}
+    100%{transform:rotate(-5deg);}
+}
+@-webkit-keyframes ballHover{
+    0%{margin-top:0px;}
+    100%{margin-top:50px;}
+}
+@-webkit-keyframes ballHoverOut{
+    0%{margin-top:50px;}
+    100%{margin-top:0px;}
+}
+
 // moz
 @-moz-keyframes sycRotate{
     from{transform:rotate(0deg);}
@@ -273,24 +310,30 @@ a,a:hover{text-decoration:none;color:black;}
 
 .ballFall{
     animation:ballFall 1s;
+    -webkit-animation:ballFall 1s;
     margin-top:0px;
 }
 .ballUp{
     animation:ballUp 1s;
+    -webkit-animation:ballUp 1s;
     margin-top:-350px;
 }
 .ballRotateStart{
     animation:ballRotateStart 0.5s;
+    -webkit-animation:ballRotateStart 0.5s;
 }
 .ballRotate{
     animation:ballRotate 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0s infinite alternate;
+    -webkit-animation:ballRotate 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0s infinite alternate;
 }
 .ballHover{
     animation:ballHover 0.5s;
+    -webkit-animation:ballHover 0.5s;
     margin-top:50px;
 }
 .ballHoverOut{
     animation:ballHoverOut 0.5s;
+    -webkit-animation:ballHoverOut 0.5s;
     margin-top:0px;
 }
 
