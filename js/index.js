@@ -7,7 +7,7 @@ $(".lyy").bind("click",function(){
             $(".ball").removeClass("ballFall ballHide").addClass("ballRotateStart");
             $(".crystal").removeClass("ballFall crystalHide").addClass("ballRotateStart");
             setTimeout(function(){
-                $(".ball,.crystal").removeClass('ballRotateStart').addClass("ballRotate");
+                $(".ball,.crystal").addClass("ballRotate");
             },500);
         },1000);  
     },500);
@@ -26,7 +26,7 @@ $(".ballText,.crystal").each(function(index,ele){
         if(that.hasClass("ballText")){
             that = that.parent();
         }
-        that.removeClass("ballRotate ballRotateStart").addClass("ballHover");
+        that.removeClass("ballLeft ballRotate ballRotateStart").addClass("ballHover");
     }).bind("mouseleave",function(event){
         var that = $(this);
         if(that.hasClass("ballText")){

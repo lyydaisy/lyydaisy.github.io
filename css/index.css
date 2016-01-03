@@ -34,7 +34,7 @@
     100%{transform:rotate(5deg);}
 }
 @keyframes ballRotate{
-    0%{transform:rotate(5deg);}
+    0%{transform:rotate(100deg);}
     100%{transform:rotate(-5deg);}
 }
 @keyframes ballHover{
@@ -52,8 +52,6 @@ a,a:hover{text-decoration:none;color:black;}
 .sycp{
     position:fixed;
     transform:scale(1.2,1.2);
-    -webkit-transform:scale(1.2,1.2);
-    -moz-transform:scale(1.2,1.2);
 }
 .sycp1{
     width:172px;
@@ -99,7 +97,6 @@ a,a:hover{text-decoration:none;color:black;}
     animation:sycFade 2s;
     -webkit-animation:sycFade 2s;
     transform:scale(0,0);
-    -webkit-transform:scale(0,0);
     -moz-transform:scale(0,0);
 }
 .lyy{
@@ -121,8 +118,6 @@ a,a:hover{text-decoration:none;color:black;}
 }
 .lyy:hover{
     transform:scale(1.2,1.2);
-    -webkit-transform:scale(1.2,1.2);
-    -moz-transform:scale(1.2,1.2);
     box-shadow:0 0 10px #000;
 }
 .sycpfade:hover{transform:scale(0,0);}
@@ -136,8 +131,6 @@ a,a:hover{text-decoration:none;color:black;}
     border-radius:60px;
     position:fixed;
     transform-origin: 50% -150px;
-    -webkit-transform-origin: 50% -150px;
-    -moz-transform-origin: 50% -150px;
     cursor:pointer;
 } 
 .ball:before{
@@ -214,8 +207,6 @@ a,a:hover{text-decoration:none;color:black;}
     background:url(../img/crystal.png) left bottom no-repeat;
     background-size:100%;
     transform-origin: 50% -50px;
-    -webkit-transform-origin: 50% -50px;
-    -moz-transform-origin: 50% -50px;
 }
 .crystalrope{
     width:40px;
@@ -264,6 +255,7 @@ a,a:hover{text-decoration:none;color:black;}
     -webkit-animation:ballRotateStart 0.5s;
 }
 .ballRotate{
+    transform:rotate(5deg);
     animation:ballRotate 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite alternate;
     -webkit-animation:ballRotate 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite alternate;
 }
@@ -281,8 +273,6 @@ a,a:hover{text-decoration:none;color:black;}
 @media only screen and (max-width: 640px){
     .sycp{
         transform:scale(0.5,0.5);
-        -webkit-transform:scale(0.5,0.5);
-        -moz-transform:scale(0.5,0.5);
     }
     .sycp1{left:20px;top:20px;}
     .sycp2{left:200px;}
