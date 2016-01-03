@@ -34,7 +34,7 @@
     100%{transform:rotate(5deg);}
 }
 @keyframes ballRotate{
-    0%{transform:rotate(5deg);}
+    0%{transform:rotate(10deg);}
     100%{transform:rotate(-5deg);}
 }
 @keyframes ballHover{
@@ -42,80 +42,6 @@
     100%{margin-top:50px;}
 }
 @keyframes ballHoverOut{
-    0%{margin-top:50px;}
-    100%{margin-top:0px;}
-}
-
-// webkit
-@-webkit-keyframes sycRotate{
-    from{-webkit-transform:rotate(0deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-webkit-keyframes sycFade{
-    from{-webkit-transform:rotate(0deg) scale(1);}
-    to{-webkit-transform:rotate(360deg) scale(0);}
-}
-@-webkit-keyframes ballFall{
-    0%{margin-top:-320px;}
-    60%{margin-top:5px;}
-    80%{margin-top:-5px;}
-    100%{margin-top:0px;}
-}
-@-webkit-keyframes ballUp{
-    0%{margin-top:0px;}
-    20%{margin-top:50px;}
-    100%{margin-top:-350px;}
-}
-@-webkit-keyframes ballRotateStart{
-    0%{-webkit-transform:rotate(0deg);}
-    100%{-webkit-transform:rotate(5deg);}
-}
-@-webkit-keyframes ballRotate{
-    0%{-webkit-transform:rotate(5deg);}
-    100%{-webkit-transform:rotate(-5deg);}
-}
-@-webkit-keyframes ballHover{
-    0%{margin-top:0px;}
-    100%{margin-top:50px;}
-}
-@-webkit-keyframes ballHoverOut{
-    0%{margin-top:50px;}
-    100%{margin-top:0px;}
-}
-
-// moz
-@-moz-keyframes sycRotate{
-    from{-moz-transform:rotate(0deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-moz-keyframes sycFade{
-    from{-moz-transform:rotate(0deg) scale(1);}
-    to{-moz-transform:rotate(360deg) scale(0);}
-}
-@-moz-keyframes ballFall{
-    0%{margin-top:-320px;}
-    60%{margin-top:5px;}
-    80%{margin-top:-5px;}
-    100%{margin-top:0px;}
-}
-@-moz-keyframes ballUp{
-    0%{margin-top:0px;}
-    20%{margin-top:50px;}
-    100%{margin-top:-350px;}
-}
-@-moz-keyframes ballRotateStart{
-    0%{-moz-transform:rotate(0deg);}
-    100%{-moz-transform:rotate(5deg);}
-}
-@-moz-keyframes ballRotate{
-    0%{-moz-transform:rotate(5deg);}
-    100%{-moz-transform:rotate(-5deg);}
-}
-@-moz-keyframes ballHover{
-    0%{margin-top:0px;}
-    100%{margin-top:50px;}
-}
-@-moz-keyframes ballHoverOut{
     0%{margin-top:50px;}
     100%{margin-top:0px;}
 }
