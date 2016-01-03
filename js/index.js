@@ -12,7 +12,7 @@ $(".lyy").bind("click",function(){
         },1000);
     },800);
 });
-$(".crystal").bind("click",function(){
+$(".crystal,.crystalText").bind("click",function(){
     $(".ball,.crystal").removeClass("ballHover ballFall ballRotateStart ballRotate").addClass("ballUp");
     $(".daisy").slideUp();
     setTimeout(function(){
