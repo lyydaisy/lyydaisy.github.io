@@ -2,7 +2,7 @@
 layout: post
 title:  "visualisation"
 date:   2017-09-30 15:28:19 
-categories: "Python" 
+categories: "Visualisation" 
 tags: ["d3","visualisation","topojson"]
 ---
 
