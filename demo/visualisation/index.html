@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Visualization of the house price in England and Wales</title>
+        <!-- import all css -->
+        <link rel="stylesheet" href="./asset/css/normalize.min.css">
+        <link rel="stylesheet" href="./asset/css/nouislider.min.css">
+        <link rel="stylesheet" href="./asset/css/index.min.css">
+    </head>
+    <body>
+        <!-- every part is a page -->
+
+        <!-- a header page for title and introduction -->
+        <div class="page header">
+            <div class="page-content">
+                <h1>House prices and affordability in England and Wales</h1>
+                <section>
+                    <h2>Introduction</h2>
+                    <article>
+                        <p>
+                        House price is a great concern for UK people for a long time. BBC news reported that house prices are still increasing in UK reigions even if the speed of growth is slowing down except the south east of the UK where prices are rising fastest [1]. Median house price, as the market value of property in that area, can aviod to be skewed due to outliers, which is the reason why average house price is not adopted. For example, a property might be sold for a price far higher or lower than typical for the area [2]. Therefore, a research need to be investigated that the trend of median house price in the England and Wales and to explore whether local people can afford local house prices and find the related influence factors to predict the future tendency of house price and people's affordability.  
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <!-- a map page for house price of different disctricts and different years -->
+        <div class="page map">
+            <div class="page-content">
+                <h2>Map 1: Median property price, local authority district</h2>
+                <h3>England and Wales, 1997 to 2016</h3>
+                <div class="chart-wrapper">
+                    <div id="map"></div>
+                    <div id="year" class="year"></div>
+                    <div class="zooms">
+                        <button id="zoom_in" class="zoom" title="Zoom in">+</button>
+                        <button id="zoom_out" class="zoom" title="Zoom out">-</button>
+                    </div>
+                    <div>
+                        <!-- container to show active info -->
+                        <div class="click-info">
+                            <h3>Click on the map to select an area</h3>
+                            <div>
+                                Local authority: <label class="local-authority"></label>
+                            </div>
+                            <div>
+                                Median house price: &#163;<label class="price">0.0</label>
+                            </div>
+                        </div>
+
+                        <!-- choose which year's data to show -->
+                        <div>
+                            <h3>Select one year</h3>
+                            <div>
+                                Current Year: <label class="year"></label>
+                            </div>
+                            <div>
+                                1997<div id="selectYear"></div>2016
+                            </div>
+                        </div>
+
+                        <!-- add an animation to the map -->
+                        <div class="animation-control">
+                            <h3>Animation</h3>
+                            <div>
+                                <div>
+                                    Play <button id="play" class="play" type="button"></button>
+                                </div>
+                                <label for="playeInterval">Set animation speed (milliseconds per year):</label><input id="playInterval" value="1000" type="number">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- link to the data source -->
+                <p>
+                    <em>Source: <em><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoworkplacebasedearningslowerquartileandmedian">Ratio of house price to workplace-based earnings</a></em><br /></em>
+                </p>
+
+                <!-- my analysis according to the map -->
+                <section>
+                    <article>
+                        <ul>
+							<li>Since 1997, the median prices paid for residential properties in England and Wales have been increasing continuously.</li>
+							<li>Also, the location distribution, as a geographical factor, influence property price.  Firstly, the regions in England and wales can be divided into 2 parts, one is named the south part including East of England, London, South East and South West parts, and the remaining regions can be named north part. Thus, there is a significant difference in median house price between south part and north part in England and Wales, which can be seen clearly from the map that properties in south part and have higher house prices than north part.</li>
+							<li>Secondly, the difference in property price between London and outlondon is significant. London has the most highest house price than other regions in England and Wales every year.</li>
+						</ul>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <!-- a linechart page -->
+        <div class="page line-chart">
+            <div class="page-content">
+                <h2>Figure 1: Median price paid for property and median gross annual earnings</h2>
+                <h3>England and Wales, 1997 to 2016</h3>
+                <div class="chart-wrapper">
+                    <!-- the container of the linechart -->
+                    <div id="line"></div>
+                    <!-- select to change different area -->
+                    <div id="selectLineArea">
+                        Select an area: <select></select>
+                    </div>
+                </div>
+                <!-- link to the data source -->
+                <p align="center">
+                    <em>Source: <em><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoworkplacebasedearningslowerquartileandmedian">Ratio of house price to workplace-based earnings</a></em><br /></em>
+                </p>
+                <!-- my analysis according to the map -->
+                <section>
+                    <article>
+                        <ul>
+                            <li>The gap between median house price and median gross annual income widens over time in England and Wales. Though the income is rising as increasing of house price, the house prices increasing is pretty faster than earnings. And this trend is played out across England and Wales, it is most stark in London. It can be seen from the graph that the median house price of £59,900 in 1997 has grown to £215,000 in England and Wales. By comparison, the median gross annual incomes have grown from £16,885 in 1997 to £47,574 in 2016. But for london, the house income ratio from 4 times to 11 times over the two decades.</li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <!-- a page for a linechart and a related barchart -->
+        <div class="page bar-chart">
+            <div class="page-content">
+                <h2>Figure 2: Affordability ratio of median house price to median annual earnings</h2>
+                <h3>England and Wales, 1997 to 2016</h3>
+                <div class="chart-wrapper">
+                    <!-- first linechart -->
+                    <div id="bar"></div>
+                    <!-- related barchart -->
+                    <div id="bar2" class="hide"></div>
+                    <!-- info panel for linechart -->
+                    <div id="barPanel">
+                        <h3>Add or remove an area:</h3>
+                        <div>
+                            <select id="selectBarArea"></select>
+                            <button id="addBarArea">Add</button>
+                        </div>
+                        <div>
+                            <ul id="barAreaList"></ul>
+                        </div>
+                        <p>Click on each point in the line to see the 3 local authority districts with the most and least median affordability ratio.</p>
+                    </div>
+                    <!-- info panel for barchart -->
+                    <div id="bar2Panel" class="hide">
+                        <h3>The most and least median affordability ratio in 3 local authorities of <span id="bar2Area"></span> in <span id="bar2Year"></span></h3>
+                        <ul id="bar2List"></ul>
+                        <button id="backToBar">Back</button>
+                    </div>
+                </div>
+                <!-- link to the data source -->
+                <p>
+                    <em>Source: <em><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoworkplacebasedearningslowerquartileandmedian">Ratio of house price to workplace-based earnings</a></em><br /></em>
+                </p>
+                <section>
+                    <article>
+                        <ul>
+                            <li>Housing affordability has worsened in England and Wales over the last 2 decades.</li>
+                            <li>South part including London, South East, South West, East of England become the least affordable cities since 2002, while the reamining cities are the affordable cities, among which the affordability ratio of Kensington and Chelsea are 38.5 times but Copeland only account for 2.79 times, which means affordability gap widens largely.</li>
+                            <li>London become the least affordable city in England and Wales with house price being on 11.98 times the median gross annual in 2016.</li>
+                            <li>Compare to London, North East is the most affordable city with house price only account for 5.12 times to median gross annual income in 2016.</li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <!-- a page for scatterplot -->
+        <div class="page dot-chart">
+            <div class="page-content">
+                <h2>Figure 3: Annual change in house price and unemployment rate in England and Wales</h2>
+                <h3>Q3: 1998 - 2016</h3>
+                <div class="chart-wrapper">
+                    <!-- the scatterplot -->
+                    <div id="dots"></div>
+                </div>
+                <p align="center"><em>Source: <em><a href="https://statswales.gov.wales/Catalogue/Business-Economy-and-Labour-Market/People-and-Work/Unemployment/ILO-Unemployment/ilounemploymentrates-by-ukcountry-englishregion-quarter">RILO unemployment rates by UK country/English region and quarter</a></em><br /></em></p>
+                <section>
+                    <article>
+                        <li>Unemployment rate, as one of important factor related to economic growth, has influence on the housing market and house prices [3].</li>
+                        <li>The diagram simply shows that there is a negative correlation between unemployment rate and annual house change in price house in England and Wales from 1998 to 2016. It can be seen that when the employment rate is rising, the house price will be decreasing.</li>
+                    </article>
+                </section>
+                <h3>Figure 4: The trend of unemployment rate</h3>
+                <h3>England and Wales, 1997 to 2016</h3>
+                <div class="chart-wrapper">
+                    <!-- the linechart -->
+                    <div id="dotsLine"></div>
+                </div>
+                <p align="center"><em>Source: <em><a href="https://statswales.gov.wales/Catalogue/Business-Economy-and-Labour-Market/People-and-Work/Unemployment/ILO-Unemployment/ilounemploymentrates-by-ukcountry-englishregion-quarter">RILO unemployment rates by UK country/English region and quarter</a></em><br /></em></p>
+                <section>
+                    <article>
+                        <li>Between 1997 and 2004, the unemployment rates in all cities were decreasing for the whole England and Wales, and then house prices have risen sharply until 2011, after that the unemployment rate of all the cities are decreasing.</li>
+                        <li>Thus, the house price in the whole England and Wales will continue to increase in the future due to the employment rate being sharp reducing, which means people will still can not afford a house in some regions.</li>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <div class="page footer">
+            <div class="page-content">
+            	<h2>Summary</h2>
+                    <article>
+                        <p>
+                        Overall, house price is increasing in England and Wales over the past two decades, thus making more and more people can not afford their house espically for people who live in the south part of regions like london. Some factors like geography and unemployment rate to influence house price have indicated that there will still be a increasing in house price in England and Wales in the future, which means people who live in south part will still can not affordable, but north part of people have little influence. 
+                        </p>
+                    </article>
+                <h2>Reference</h2>
+                    <article>
+                        <p>
+                            1. Milligan, B. 2017. <em>UK house price growth 'picking up'</em> [Online]. Available at: http://www.bbc.co.uk/news/business-39564023 [Accessed: 25 April 2017].
+                        </p>
+                        <p>
+                            2. Redfin. 2017. <em>Median Sale Price vs. Average Sale Price</em> [Online].  Available at: https://www.redfin.com/resources/median-sale-price-vs-average-sale-price [Accessed: 25 April 2017].
+                        </p>
+                        <p>
+                            3. Pettinger, T. 2013. <em>Factors that affect the housing market</em> [Online]. Available at: http://www.economicshelp.org/blog/377/housing/factors-that-affect-the-housing-market/ [Accessed: 25 April 2017].
+                        </p>
+                    </article>
+            </div>
+        </div>
+
+        <!-- the loading layer -->
+        <div id="loading">
+            <img src="./asset/image/loading.gif" alt="loading">
+        </div>
+
+        <!-- import all scripts -->
+        <script src="./asset/js/d3.min.js"></script>
+        <script src="./asset/js/d3-queue.min.js"></script>
+        <script src="./asset/js/topojson.min.js"></script>
+        <script src="./asset/js/jquery-3.2.0.min.js"></script>
+        <script src="./asset/js/underscore.min.js"></script>
+        <script src="./asset/js/nouislider.min.js"></script>
+        <script src="./asset/js/colorbrewer.js"></script>
+        <script src="./asset/js/index.min.js"></script>
+    </body>
+</html>
