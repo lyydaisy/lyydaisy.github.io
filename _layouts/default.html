@@ -17,6 +17,16 @@
 		<link rel="stylesheet" href="{{site.domain_name}}/css/main.css">
 
 		<script type="text/javascript" src="{{site.domain_name}}/js/prefixfree.min.js"></script>
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?122868111e00d8c819994d5575da03b1";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+
 
 	</head>
 	<body>
@@ -92,14 +102,5 @@
 	{%if page.title contains 'tag'%}
     <script src="{{site.url}}/js/tags.js"></script>  
     {%endif%}
-	<script>
-var _hmt = _hmt || [];
-(function() {
-	  var hm = document.createElement("script");
-	    hm.src = "//hm.baidu.com/hm.js?6766cf57f02ddbdcd536a2222de3693e";
-		  var s = document.getElementsByTagName("script")[0]; 
-		    s.parentNode.insertBefore(hm, s);
-})();
-	</script>
     </body>
 </html>
